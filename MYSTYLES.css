@@ -1,0 +1,67 @@
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin: 0px 20px 0px 225px;
+}
+
+.welcome {
+    margin-left: 15px;
+    position: static;
+    width: 90px;
+    height: 28px;
+    left: 12px;
+    top: 10px;
+    color: #28352F;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600 , Semi Bold;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.main {
+    display: flex;
+    Font-family: Inter;
+    Font-style: Bold;
+    Font-size: 40px;
+    width: 327px;
+    height: 192px;
+    margin-top: 120px;
+    font-weight: 700 , Bold;
+    font-style: normal;
+    color: #172B4D;
+}
+
+.inside_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p1 {
+    margin: 60px 24px 0 24px;
+}
+
+.p2 {
+    margin: 00px 24px 0 24px;
+    color: rgb(170, 231, 78);
+}
+
+.p3 {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.links {
+    margin: 30px;
+}
