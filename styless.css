@@ -39,10 +39,10 @@
   line-height: 52px;
   text-align: center;
   color: #172B4D;
-  margin: 30px 0px 0px 0px;
+  margin: 30px 0 0 0;
 }
 
-.intro > div {
+.intro > span {
   color: #36B37F;
 }
 
@@ -58,7 +58,7 @@
   line-height: 28px;
   text-align: center;
   color: #172B4D;
-  margin: 58px 0px;
+  margin: 58px 0;
 }
 
 .header {
@@ -87,19 +87,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .recent > h2 {
   text-align: center;
   height: 97px;
   width: 327px;
-  border-radius: 0px;
+  border-radius: 0;
   position: static;
   width: 327px;
   height: 97px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
@@ -109,7 +109,7 @@
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 24px 0px;
+  margin: 24px 0;
 }
 
 .stories-1 {
@@ -163,7 +163,7 @@
   align-items: center;
   padding: 6px;
   height: 40px;
-  margin: 0px;
+  margin: 0;
   width: 305px;
 }
 
@@ -243,8 +243,8 @@
   font-size: 17px;
   letter-spacing: 0.03em;
   color: #FFFFFF;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   background: #36B37F;
   border-radius: 4px;
   padding: 12px;
@@ -272,7 +272,7 @@
   font-weight: 700;
   font-size: 40px;
   color: #172B4D;
-  margin: 24px 0px 0px 0px;
+  margin: 24px 0 0 0;
   width: 351px;
 }
 
@@ -288,7 +288,7 @@
   color: #42526E;
   line-height: 32px;
   text-align: center;
-  margin: 24px 0px 0px 10px;
+  margin: 24px 0 0 10px;
 }
 
 .button-resume {
@@ -299,7 +299,7 @@
   letter-spacing: 0.03em;
   color: #FFFFFF;
   padding: 12px;
-  margin: 24px 0px 0px 0px;
+  margin: 24px 0 0 0;
   background: #36B37F;
   border-radius: 4px;
   width: 159px;
@@ -342,7 +342,7 @@
   margin-bottom: 50px;
   text-align: center;
   color: #344563;
-  margin: 0px 0px;
+  margin: 0 0;
 }
 
 .lang-list {
@@ -350,7 +350,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0px;
+  margin: 0;
   padding: 12px;
   font-family: 'Inter';
   font-style: normal;
@@ -366,7 +366,7 @@
   height: 16px;
   padding: 12px;
   background: #FFFFFF;
-  margin: 0px 8px 0px 28px;
+  margin: 0 8px 0 28px;
   letter-spacing: 0.03em;
   border-radius: 8px;
 }
@@ -377,7 +377,7 @@
   padding: 12px;
   border-radius: 8px;
   background: #FFFFFF;
-  margin: 0px 8px 0px 8px ;
+  margin: 0 8px 0 8px ;
   letter-spacing: 0.03em;
 }
 
@@ -385,7 +385,7 @@
   border-radius: 8px;
   letter-spacing: 0.03em;
   width: 29px;
-  margin: 0px 8px 0px 8px ;
+  margin: 0 8px 0 8px ;
   height: 16px;
   padding: 12px;
   background: #FFFFFF;
@@ -395,7 +395,7 @@
   border-radius: 8px;
   width: 26px;
   letter-spacing: 0.03em;
-  margin: 0px 28px 0px 8px ;
+  margin: 0 28px 0 8px ;
   height: 16px;
   padding: 12px;
   background: #FFFFFF;
@@ -405,7 +405,7 @@
   border-radius: 8px;
   width: 60px;
   letter-spacing: 0.03em;
-  margin: 0px 8px 0px 8px ;
+  margin: 0 8px 0 8px ;
   height: 16px;
   padding: 12px;
   background: #FFFFFF;
@@ -415,7 +415,7 @@
   border-radius: 8px;
   letter-spacing: 0.03em;
   width: 79px;
-  margin: 0px 8px 0px 8px ;
+  margin: 0 8px 0 8px ;
   height: 16px;
   padding: 12px;
   background: #FFFFFF;
@@ -425,7 +425,7 @@
   letter-spacing: 0.03em;
   width: 39px;
   border-radius: 8px;
-  margin: 0px 8px 0px 8px ;
+  margin: 0 8px 0 8px ;
   height: 16px;
   padding: 12px;
   background: #FFFFFF;
@@ -436,7 +436,7 @@
   letter-spacing: 0.03em;
   width: 59px;
   border-radius: 8px;
-  margin: 0px 8px 0px 8px ;
+  margin: 0 8px 0 8px ;
   height: 16px;
   padding: 12px;
   background: #FFFFFF;
@@ -446,7 +446,7 @@
   letter-spacing: 0.03em;
   width: 57px;
   border-radius: 8px;
-  margin: 0px 8px 0px 8px ;
+  margin: 0 8px 0 8px ;
   height: 16px;
   padding: 12px;
   background: #FFFFFF;
@@ -456,7 +456,7 @@
   letter-spacing: 0.03em;
   width: 48px;
   border-radius: 8px;
-  margin: 0px 8px 0px 8px ;
+  margin: 0 8px 0 8px ;
   height: 16px;
   padding: 12px;
   background: #FFFFFF;
@@ -466,7 +466,7 @@
   letter-spacing: 0.03em;
   width: 43px;
   border-radius: 8px;
-  margin: 0px 8px 0px 8px ;
+  margin: 0 8px 0 8px ;
   height: 16px;
   padding: 12px;
   background: #FFFFFF;
@@ -476,7 +476,7 @@
   letter-spacing: 0.03em;
   width: 55px;
   border-radius: 8px;
-  margin: 0px 4px 0px 4px ;
+  margin: 0 4px 0 4px ;
   height: 16px;
   padding: 12px;
   background: #FFFFFF;
@@ -486,7 +486,7 @@
   letter-spacing: 0.03em;
   width: 37px;
   border-radius: 8px;
-  margin: 0px 8px 0px 8px ;
+  margin: 0 8px 0 8px ;
   height: 16px;
   padding: 12px;
   background: #FFFFFF;
@@ -496,7 +496,7 @@
   letter-spacing: 0.03em;
   width: 53px;
   border-radius: 8px;
-  margin: 0px 8px 0px 8px ;
+  margin: 0 8px 0 8px ;
   height: 16px;
   padding: 12px;
   background: #FFFFFF;
@@ -512,5 +512,5 @@
   line-height: 52px;
   text-align: center;
   color: #172B4D;
-  margin: 0px 0px;
+  margin: 0 0;
 }
