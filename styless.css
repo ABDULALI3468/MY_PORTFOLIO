@@ -32,7 +32,7 @@
   height: 192px;
   left: 24px;
   top: 64px;
-  font-family: 'Inter', sans-serif;;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -51,13 +51,13 @@
   height: 164px;
   left: 24px;
   top: 314px;
-  font-family: 'Inter', sans-serif;;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d4d;
   margin: 58px 0;
 }
 
@@ -70,7 +70,7 @@
 .header > h2 {
   width: 90px;
   height: 28px;
-  font-family: 'Inter', sans-serif;;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -98,7 +98,7 @@
   position: static;
   left: 0;
   top: 0;
-  font-family: 'Inter', sans-serif;;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -121,7 +121,6 @@
   align-self: center;
   flex-direction: column;
   background: #ebf0ee;
-  border-radius: 8px;
   border: 1px solid #d0d9d4;
   margin-top: 62px;
 }
@@ -140,11 +139,11 @@
   text-align: center;
   width: 295px;
   height: 57px;
-  font-family: 'Inter', sans-serif;;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
-  color: #3A4A42;
+  color: #3a4a42;
   margin: 20px auto 20px auto;
   align-items: center;
 }
@@ -174,14 +173,14 @@
   height: 16px;
   left: 12px;
   top: 8px;
-  font-family: 'Inter', sans-serif;;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   letter-spacing: 0.03em;
   display: flex;
   color: #3A4A42;
-  background-color: #EBF0EE;
+  background-color: #ebf0ee;
   background-size: 150px 32px;
   border-radius: 4px;
 }
@@ -191,13 +190,13 @@
   height: 16px;
   left: 12px;
   top: 8px;
-  font-family: 'Inter', sans-serif;;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   letter-spacing: 0.03em;
-  color: #3A4A42;
-  background-color: #EBF0EE;
+  color: #3a4a42;
+  background-color: #ebf0ee;
   background-size: auto;
   border-radius: 4px;
 }
@@ -207,31 +206,31 @@
   height: 16px;
   left: 12px;
   top: 8px;
-  font-family: 'Inter', sans-serif;;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   letter-spacing: 0.03em;
-  color: #3A4A42;
-  background-color: #EBF0EE;
+  color: #3a4a42;
+  background-color: #ebf0ee;
   background-size: auto;
   border-radius: 4px;
 }
 
 .html {
-  background-color: #EBF0EE;
+  background-color: #ebf0ee;
   background-size: auto;
   border-radius: 4px;
   width: 27px;
   height: 16px;
   left: 12px;
   top: 8px;
-  font-family: 'Inter', sans-serif;;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   letter-spacing: 0.03em;
-  color: #3A4A42;
+  color: #3a4a42;
 }
 
 .see-project {
@@ -240,10 +239,10 @@
   font-weight: 500;
   font-size: 17px;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 0;
   margin: 0;
-  background: #36B37F;
+  background: #36b37f;
   border-radius: 4px;
   padding: 12px;
   background-size: auto;
@@ -265,7 +264,7 @@
 }
 
 .myself {
-  font-family: 'Inter', sans-serif;;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -277,28 +276,28 @@
 
 .exp {
   width: 351px;
-  font-family: 'Inter', sans-serif;;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   width: 351px;
   height: 189px;
-  color: #42526E;
+  color: #42526e;
   line-height: 32px;
   text-align: center;
   margin: 24px 0 0 10px;
 }
 
 .button-resume {
-  font-family: 'Inter', sans-serif;;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 12px;
   margin: 24px 0 0 0;
-  background: #36B37F;
+  background: #36b37f;
   border-radius: 4px;
   width: 159px;
   align-items: center;
@@ -308,9 +307,9 @@
 .languages {
   height: 352px;
   width: 327px;
-  background: #EBF0EE;
+  background: #ebf0ee;
   border-radius: 8px;
-  border: 1px solid #C1C7D0;
+  border: 1px solid #c1c7d0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -320,7 +319,7 @@
 }
 
 .icon {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -332,7 +331,7 @@
 .lang-heading {
   width: 337px;
   height: 32px;
-  font-family: 'Inter', sans-serif;;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -350,20 +349,20 @@
   align-items: center;
   margin: 0;
   padding: 12px;
-  font-family: 'Inter', sans-serif;;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
   flex: none;
-  color: #36B37E;
+  color: #36b37e;
 }
 
 .lang-java {
   width: 65px;
   height: 16px;
   padding: 12px;
-  background: #FFFFFF;
+  background: #ffffff;
   margin: 0 8px 0 28px;
   letter-spacing: 0.03em;
   border-radius: 8px;
@@ -374,7 +373,7 @@
   height: 16px;
   padding: 12px;
   border-radius: 8px;
-  background: #FFFFFF;
+  background: #ffffff;
   margin: 0 8px 0 8px ;
   letter-spacing: 0.03em;
 }
@@ -386,7 +385,7 @@
   margin: 0 8px 0 8px ;
   height: 16px;
   padding: 12px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .lang-css {
@@ -396,7 +395,7 @@
   margin: 0 28px 0 8px ;
   height: 16px;
   padding: 12px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .lang-boot {
@@ -406,7 +405,7 @@
   margin: 0 8px 0 8px ;
   height: 16px;
   padding: 12px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .lang-rails {
@@ -416,7 +415,7 @@
   margin: 0 8px 0 8px ;
   height: 16px;
   padding: 12px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .lang-rpsec {
@@ -426,7 +425,7 @@
   margin: 0 8px 0 8px ;
   height: 16px;
   padding: 12px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 
@@ -437,7 +436,7 @@
   margin: 0 8px 0 8px ;
   height: 16px;
   padding: 12px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .lang-selenium {
@@ -447,7 +446,7 @@
   margin: 0 8px 0 8px ;
   height: 16px;
   padding: 12px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .lang-codekit {
@@ -457,7 +456,7 @@
   margin: 0 8px 0 8px ;
   height: 16px;
   padding: 12px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .lang-github {
@@ -467,7 +466,7 @@
   margin: 0 8px 0 8px ;
   height: 16px;
   padding: 12px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .lang-codepen {
@@ -477,7 +476,7 @@
   margin: 0 4px 0 4px ;
   height: 16px;
   padding: 12px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .lang-gitlab {
@@ -487,7 +486,7 @@
   margin: 0 8px 0 8px ;
   height: 16px;
   padding: 12px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .lang-terminal {
@@ -497,18 +496,18 @@
   margin: 0 8px 0 8px ;
   height: 16px;
   padding: 12px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .conclusion-text {
   width: 327px;
   height: 363px;
-  font-family: 'Inter', sans-serif;;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
   margin: 0 0;
 }
