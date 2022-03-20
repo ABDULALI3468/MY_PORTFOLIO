@@ -1,7 +1,7 @@
 # hello_microverse_project
 
 > Description : 
-                This is a mobile portfolio project in which i created the first page of my portfolio website.
+                This is a mobile portfolio project  in which i created the my portfolio website.
 
 
 ## Built With
@@ -30,5 +30,4 @@ We admire your help and support and your views also!
 
 ## Acknowledgments
 
-- Hats off to Roberto for their prestigious help , time and support!
-
+- Hats off to my mentors and coding parteners for their prestigious help , time and support!
