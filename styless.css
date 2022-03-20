@@ -7,7 +7,7 @@
   justify-content: center;
   grid-gap: 30px;
   margin-top: 0;
-  background: #ffffff;
+  background: #fff;
   width: 375px;
   align-items: center;
 }
@@ -129,7 +129,7 @@
   height: 222px;
   width: 327px;
   border-radius: 8px;
-  background:#ffffff ;
+  background: #fff;
 }
 
 .stories-1 > h2 {
@@ -145,7 +145,6 @@
   font-size: 24px;
   color: #3a4a42;
   margin: 20px auto 20px auto;
-  align-items: center;
 }
 
 .list-flex {
@@ -179,7 +178,7 @@
   font-size: 12px;
   letter-spacing: 0.03em;
   display: flex;
-  color: #3A4A42;
+  color: #3a4a42;
   background-color: #ebf0ee;
   background-size: 150px 32px;
   border-radius: 4px;
@@ -239,8 +238,7 @@
   font-weight: 500;
   font-size: 17px;
   letter-spacing: 0.03em;
-  color: #ffffff;
-  padding: 0;
+  color: #fff;
   margin: 0;
   background: #36b37f;
   border-radius: 4px;
@@ -268,11 +266,10 @@
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
-  color: #172B4D;
+  color: #172b4d;
   margin: 24px 0 0 0;
   width: 351px;
 }
-
 
 .exp {
   width: 351px;
@@ -280,7 +277,6 @@
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  width: 351px;
   height: 189px;
   color: #42526e;
   line-height: 32px;
@@ -294,7 +290,7 @@
   font-weight: 500;
   font-size: 17px;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: #fff;
   padding: 12px;
   margin: 24px 0 0 0;
   background: #36b37f;
@@ -319,7 +315,7 @@
 }
 
 .icon {
-  background: #ffffff;
+  background: #fff;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -339,7 +335,7 @@
   margin-bottom: 50px;
   text-align: center;
   color: #344563;
-  margin: 0 0;
+  
 }
 
 .lang-list {
@@ -362,7 +358,7 @@
   width: 65px;
   height: 16px;
   padding: 12px;
-  background: #ffffff;
+  background: #fff;
   margin: 0 8px 0 28px;
   letter-spacing: 0.03em;
   border-radius: 8px;
@@ -373,8 +369,8 @@
   height: 16px;
   padding: 12px;
   border-radius: 8px;
-  background: #ffffff;
-  margin: 0 8px 0 8px ;
+  background: #fff;
+  margin: 0 8px 0 8px;
   letter-spacing: 0.03em;
 }
 
@@ -382,121 +378,120 @@
   border-radius: 8px;
   letter-spacing: 0.03em;
   width: 29px;
-  margin: 0 8px 0 8px ;
+  margin: 0 8px 0 8px;
   height: 16px;
   padding: 12px;
-  background: #ffffff;
+  background: #fff;
 }
 
 .lang-css {
   border-radius: 8px;
   width: 26px;
   letter-spacing: 0.03em;
-  margin: 0 28px 0 8px ;
+  margin: 0 28px 0 8px;
   height: 16px;
   padding: 12px;
-  background: #ffffff;
+  background: #fff;
 }
 
 .lang-boot {
   border-radius: 8px;
   width: 60px;
   letter-spacing: 0.03em;
-  margin: 0 8px 0 8px ;
+  margin: 0 8px 0 8px;
   height: 16px;
   padding: 12px;
-  background: #ffffff;
+  background: #fff;
 }
 
 .lang-rails {
   border-radius: 8px;
   letter-spacing: 0.03em;
   width: 79px;
-  margin: 0 8px 0 8px ;
+  margin: 0 8px 0 8px;
   height: 16px;
   padding: 12px;
-  background: #ffffff;
+  background: #fff;
 }
 
 .lang-rpsec {
   letter-spacing: 0.03em;
   width: 39px;
   border-radius: 8px;
-  margin: 0 8px 0 8px ;
+  margin: 0 8px 0 8px;
   height: 16px;
   padding: 12px;
-  background: #ffffff;
+  background: #fff;
 }
-
 
 .lang-capybara {
   letter-spacing: 0.03em;
   width: 59px;
   border-radius: 8px;
-  margin: 0 8px 0 8px ;
+  margin: 0 8px 0 8px;
   height: 16px;
   padding: 12px;
-  background: #ffffff;
+  background: #fff;
 }
 
 .lang-selenium {
   letter-spacing: 0.03em;
   width: 57px;
   border-radius: 8px;
-  margin: 0 8px 0 8px ;
+  margin: 0 8px 0 8px;
   height: 16px;
   padding: 12px;
-  background: #ffffff;
+  background: #fff;
 }
 
 .lang-codekit {
   letter-spacing: 0.03em;
   width: 48px;
   border-radius: 8px;
-  margin: 0 8px 0 8px ;
+  margin: 0 8px 0 8px;
   height: 16px;
   padding: 12px;
-  background: #ffffff;
+  background: #fff;
 }
 
 .lang-github {
   letter-spacing: 0.03em;
   width: 43px;
   border-radius: 8px;
-  margin: 0 8px 0 8px ;
+  margin: 0 8px 0 8px;
   height: 16px;
   padding: 12px;
-  background: #ffffff;
+  background: #fff;
 }
 
 .lang-codepen {
   letter-spacing: 0.03em;
   width: 55px;
   border-radius: 8px;
-  margin: 0 4px 0 4px ;
+  margin: 0 4px 0 4px;
   height: 16px;
   padding: 12px;
-  background: #ffffff;
+  background: #fff;
 }
 
 .lang-gitlab {
   letter-spacing: 0.03em;
   width: 37px;
   border-radius: 8px;
-  margin: 0 8px 0 8px ;
+  margin: 0 8px 0 8px;
   height: 16px;
   padding: 12px;
-  background: #ffffff;
+  background: #fff;
 }
 
 .lang-terminal {
   letter-spacing: 0.03em;
   width: 53px;
   border-radius: 8px;
-  margin: 0 8px 0 8px ;
+  margin: 0 8px 0 8px;
   height: 16px;
   padding: 12px;
-  background: #ffffff;
+  background: #fff;
 }
 
 .conclusion-text {
