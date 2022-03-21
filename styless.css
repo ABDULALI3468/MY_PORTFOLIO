@@ -148,15 +148,11 @@
 }
 
 .list-flex {
-  display: flex;
-  justify-content: center;
+  
 }
 
 .list {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  
   padding: 6px;
   height: 40px;
   margin: 0;
@@ -177,7 +173,6 @@
   font-weight: 600;
   font-size: 12px;
   letter-spacing: 0.03em;
-  display: flex;
   color: #3a4a42;
   background-color: #ebf0ee;
   background-size: 150px 32px;
