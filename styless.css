@@ -152,15 +152,16 @@
 }
 
 .list {
-  
   padding: 6px;
   height: 40px;
   margin: 0;
   width: 305px;
+  list-style-type: none;
 }
 
 .list > li {
   padding: 12px;
+  
 }
 
 .ruby {
@@ -177,6 +178,8 @@
   background-color: #ebf0ee;
   background-size: 150px 32px;
   border-radius: 4px;
+  float: left;
+  margin-right: 5px;
 }
 
 .css {
@@ -193,6 +196,7 @@
   background-color: #ebf0ee;
   background-size: auto;
   border-radius: 4px;
+  float: right;
 }
 
 .java {
@@ -209,6 +213,8 @@
   background-color: #ebf0ee;
   background-size: auto;
   border-radius: 4px;
+  float: right;
+  margin-right: 7px;
 }
 
 .html {
@@ -225,6 +231,8 @@
   font-size: 12px;
   letter-spacing: 0.03em;
   color: #3a4a42;
+  float: right;
+  margin-right: 7px;
 }
 
 .see-project {
@@ -242,11 +250,12 @@
 }
 
 .div-h2 {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   text-align: center;
-  justify-content: center;
+  justify-content: center; */
   margin: 15px;
+  clear: both;
 }
 
 .aboutme {
