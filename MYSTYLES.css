@@ -1,70 +1,81 @@
 .firstpage {
-  background-image: url(./images/backgrounds.png);
-  width: 375px;
-  height: auto;
-}
-
-.intropage {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  align-self: center;
-}
-
-.intro {
-  position: static;
-  width: 327px;
-  height: 192px;
-  left: 24px;
-  top: 64px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
   text-align: center;
-  color: #172b4d;
-  margin: 30px 0 0 0;
+  max-width: 375px;
+  min-height: auto;
 }
 
-.intro > span {
-  color: #36b37f;
-}
-
-.LOGO {
-  text-decoration: none;
-  color: #172b4d;
-}
-
-.intro-exp {
-  width: 327px;
-  height: 164px;
-  left: 24px;
-  top: 314px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  color: #172b4d;
-  margin: 58px 0;
-}
-
-.header {
+.nav {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  padding-left: 24px;
 }
 
-.header > h2 {
+.nav > h2 {
+  position: static;
   width: 90px;
   height: 28px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
+  line-height: 28px;
   color: #28352f;
-  margin: 25px 215px 0 0;
+}
+
+.nav > img {
+  padding-right: 36px;
+}
+
+.intropage {
+  height:auto;
+  background-image: url(./images/backgroundss.png);
+  background-size: 100% 100%;
+}
+
+.wrapper {
+  padding: 30px;
+  margin-top: 30px;
+  padding-left: 13px;
+  height: 115vh;
+}
+
+.intro::first-child() {
+  padding-right: 10px;
+}
+
+.intro {
+  width: 327px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0 auto;
+  line-height: 52px;
+}
+
+.head1 {
+  color: #172b4d;
+}
+
+.para1 {
+  color:  #36b37f;
+}
+
+.intro-exp {
+  position: static;
+  height: 164px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  padding-left: 20px;
+  color: #172b4d;
+  margin: 50px 8px 60px 0;
 }
