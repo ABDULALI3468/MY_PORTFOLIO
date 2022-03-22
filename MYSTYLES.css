@@ -32,7 +32,7 @@
 }
 
 .intropage {
-  height:auto;
+  height: auto;
   background-image: url(./images/backgroundss.png);
   background-size: 100% 100%;
 }
@@ -44,7 +44,7 @@
   height: 115vh;
 }
 
-.intro::first-child() {
+.first-child {
   padding-right: 10px;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .para1 {
-  color:  #36b37f;
+  color: #36b37f;
 }
 
 .intro-exp {
