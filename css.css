@@ -332,5 +332,69 @@ nav > img {
   text-align: center;
   color: #172b4d;
   text-align: center;
-  margin: 36px 24px 60px 24px;
+  margin: 36px 24px 0 24px;
+}
+
+.footer {
+  background: url(./images/illustration-contact-form.svg) no-repeat right;
+  height: 700px;
+  margin-top: 58px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0 24px;
+}
+
+.contact-btn {
+  align-self: center;
+  margin: 0px 0 36px;
+  border-radius: 4px;
+  border-style: none;
+  padding: 12px 9px;
+  height: 48px;
+}
+
+.contact-lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 102px;
+  margin-bottom: 17px;
+}
+
+.contact-lists li {
+  padding-right: 19px;
+  list-style: none;
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+}
+
+.email a {
+  text-decoration: none;
+  color: #42526e;
+}
+
+.info {
+  height: 48px;
+  padding-left: 15px;
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.textarea {
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #60c095;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #091e42;
+  height: 114px;
 }
