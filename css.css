@@ -96,10 +96,15 @@ nav > img {
 .grid {
   display: grid;
   background: #fff;
+  margin: auto;
+  column-width: 375px;
+  justify-content: center;
+  align-items: center;
 }
 
-.main-section {
+.card-section {
   display: flex;
+  align-self: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -133,6 +138,7 @@ nav > img {
   margin-top: 24px;
   margin-left: 24px;
   margin-right: 24px;
+  max-width: 327px;
 }
 
 .white-back {
@@ -243,6 +249,7 @@ nav > img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .languages {
@@ -329,7 +336,6 @@ nav > img {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  text-align: center;
   color: #172b4d;
   text-align: center;
   margin: 36px 24px 0 24px;
