@@ -187,12 +187,13 @@ nav > img {
 }
 
 .seepr-button:hover {
-  box-shadow: 0px 8px 16px 0px #36b37f3d;
+  box-shadow: 0 8px 16px 0 #36b37f3d;
 }
 
 .seepr-button:active {
   background: #008552;
 }
+
 .aboutme {
   display: flex;
   flex-direction: column;
@@ -244,7 +245,7 @@ nav > img {
 }
 
 .resume-button:hover {
-  box-shadow: 0px 8px 16px 0px #36b37f3d;
+  box-shadow: 0 8px 16px 0 #36b37f3d;
 }
 
 .resume-button:active {
@@ -369,7 +370,7 @@ nav > img {
 }
 
 .contact-btn:hover {
-  box-shadow: 0px 8px 16px 0px #36b37f3d;
+  box-shadow: 0 8px 16px 0 #36b37f3d;
 }
 
 .contact-btn:active {
