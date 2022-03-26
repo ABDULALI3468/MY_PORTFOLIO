@@ -5,6 +5,10 @@
   font-family: "Inter", sans-serif;
 }
 
+.center {
+  margin-inline: auto;
+}
+
 .firstpage {
   display: flex;
   flex-direction: column;
@@ -94,11 +98,10 @@ nav > img {
 .grid {
   display: grid;
   background: #fff;
+  grid-template-columns: 1fr;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
-  grid-template-columns: 1fr;
-  justify-content: center;
-  align-items: center;
 }
 
 .card-section {
@@ -134,15 +137,12 @@ nav > img {
   background: #ebf0ee;
   border: 1px solid #d0d9d4;
   margin-top: 24px;
-  margin-left: 24px;
-  margin-right: 24px;
-  max-width: 327px;
 }
 
 .white-back {
   margin-top: 252px;
   height: 219px;
-  width: 325px;
+  width: 100%;
   border-radius: 8px;
   background: #fff;
   display: flex;
@@ -259,13 +259,6 @@ nav > img {
   background: #008552;
 }
 
-/* .la-fw-sk {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-} */
-
 .languages {
   height: 352px;
   width: 327px;
@@ -304,6 +297,8 @@ nav > img {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .mr-LR {
@@ -330,8 +325,6 @@ nav > img {
 .langs-name {
   border-radius: 8px;
   letter-spacing: 0.03em;
-  margin-left: 4px;
-  margin-right: 4px;
   padding: 12px;
   background: #fff;
   color: #36b37e;
@@ -351,20 +344,19 @@ nav > img {
   line-height: 52px;
   color: #172b4d;
   text-align: center;
-  margin: 36px 24px 0 24px;
+  margin-block: 36px;
 }
 
 .footer {
-  background: url(./images/illustration-contact-form.svg) no-repeat right;
-  height: 700px;
-  margin-top: 58px;
+  background: url(./images/bg-footer.svg) no-repeat right;
+  background-size: 100% 100%;
 }
 
 .contact {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin: 0 24px;
+  margin: 36px 0 0;
 }
 
 .contact-btn {
@@ -388,7 +380,7 @@ nav > img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 102px;
+  margin: 46px 102px 19px;
   margin-bottom: 17px;
 }
 
@@ -400,6 +392,13 @@ nav > img {
 .email {
   display: flex;
   justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #42526e;
+  padding-bottom: 100px;
 }
 
 .email a {
@@ -426,13 +425,32 @@ nav > img {
   height: 114px;
 }
 
-@media screen and (max-width: 375px) {
-  .header-desktop {
-    display: none;
-  }
+.header-desktop {
+  display: none;
+}
+
+.container {
+  padding: 0 24px;
+}
+
+.lastpage {
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
+  .container {
+    padding: 0 104px;
+  }
+
+  .lastpage {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 2px solid #dfe1e6;
+    padding-bottom: 160px;
+  }
+
   .header-desktop {
     display: flex;
     justify-content: center;
@@ -460,19 +478,13 @@ nav > img {
 
   .intro {
     max-width: 100%;
-
     margin-bottom: 24px;
     margin-top: 60px;
     font-weight: 800;
     font-size: 40px;
     line-height: 60px;
-    /* or 125% */
-
     text-align: center;
     letter-spacing: 0.37px;
-
-    /* Neutrals/N800 */
-
     color: #172b4d;
   }
 
@@ -481,8 +493,6 @@ nav > img {
     width: 920px;
     margin: 0 0 0 34px;
     padding: 0 80px 34px 80px;
-
-    /* padding:0 50px 0 50px; */
     margin-left: auto;
     margin-right: auto;
   }
@@ -498,8 +508,45 @@ nav > img {
     grid-gap: 24px;
   }
 
+  .conclusion-text {
+    width: 40%;
+    font-size: 30px;
+    text-align: left;
+    margin: 140px 24px 0;
+  }
+
+  .contact {
+    width: 60%;
+    margin: 120px 24px 0;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .textarea {
+    width: 100%;
+  }
+
+  .contact-btn {
+    align-self: flex-start;
+  }
+
+  .footer {
+    align-self: center;
+    background: url(./images/bg-footer.svg) no-repeat;
+    background-size: 100% 100%;
+  }
+
   .aboutme {
     margin-top: 95px;
+    background: url(./images/aboutme-background.svg) no-repeat;
+    background-size: cover;
+    padding-bottom: 70px;
+  }
+
+  .languages {
+    width: 100%;
   }
 
   .exp {
@@ -507,10 +554,8 @@ nav > img {
     height: 96px;
   }
 
-  .last-page {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
+  .email {
+    display: none;
   }
 }
+
