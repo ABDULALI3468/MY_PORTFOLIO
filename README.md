@@ -23,7 +23,6 @@ Here is the link:
 https://abdulali3468.github.io/MY_PORTFOLIO/
 
 
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
