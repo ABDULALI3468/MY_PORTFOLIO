@@ -1,8 +1,7 @@
-
-# My Portfolio.
+# My Portfolio
 
 > Description : 
-                This is a website portfolio project in which i created the my portfolio website.
+                This is a mobile portfolio project in which i created my portfolio website.
 
 
 ## Built With
@@ -41,4 +40,5 @@ We admire your help and support and your views also!
 
 ## Acknowledgments
 
-- Hats off to Roberto, Isa and everyone for their prestigious time , help and support!
+- Hats off to Roberto for their prestigious help , time and support!
+
