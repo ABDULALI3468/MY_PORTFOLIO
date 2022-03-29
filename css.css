@@ -586,7 +586,7 @@ nav > img {
   .langs-name:hover {
     transform: scale(1.5);
   }
-  
+
   .resume-button {
     transition: transform 1s, background-color 1s, color 1s;
   }
