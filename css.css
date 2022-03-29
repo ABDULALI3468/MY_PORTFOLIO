@@ -547,6 +547,7 @@ nav > img {
 
   .languages {
     width: 100%;
+    transition: transform 1s;
   }
 
   .exp {
@@ -558,20 +559,12 @@ nav > img {
     display: none;
   }
 
-  /* ------------------------------------------------------------------ */
-
-  /* ANIMTIONS: */
-
   .stories-card {
     transition: transform 1s;
   }
 
   .stories-card:hover {
     transform: scale(1.1);
-  }
-
-  .languages {
-    transition: transform 1s;
   }
 
   .languages:hover {
