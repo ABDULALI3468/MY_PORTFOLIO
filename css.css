@@ -569,9 +569,7 @@ nav > img {
   .stories-card:hover {
     transform: scale(1.1);
   }
-  
-  
-  
+
   .languages {
     transition: transform 1s;
   }
@@ -595,7 +593,7 @@ nav > img {
   .langs-name:hover {
     transform: scale(1.5);
   }
-
+  
   .resume-button {
     transition: transform 1s, background-color 1s, color 1s;
   }
@@ -603,7 +601,7 @@ nav > img {
   .resume-button:hover {
     transform: scale(1.3);
     background-color: #fff;
-    color: #36b37f;;
+    color: #36b37f;
   }
 
   .seepr-button {
@@ -613,8 +611,6 @@ nav > img {
   .seepr-button:hover {
     transform: scale(1.3);
     background-color: #fff;
-    color: #36b37f;;
+    color: #36b37f;
   }
-
-
 }
