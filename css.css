@@ -79,7 +79,7 @@ nav > img {
 }
 
 .green-color {
-  color: #36b37f;
+  color: #247f59;
 }
 
 .bottom-img {
@@ -184,17 +184,17 @@ nav > img {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 19px;
   letter-spacing: 0.03em;
   color: #fff;
-  background: #36b37f;
+  background: #247F59;
   border-radius: 4px;
   padding: 12px;
   margin-top: 29px;
 }
 
 .seepr-button:hover {
-  box-shadow: 0 8px 16px 0 #36b37f3d;
+  box-shadow: 0 8px 16px 0 #247f59;
 }
 
 .seepr-button:active {
@@ -244,7 +244,7 @@ nav > img {
   letter-spacing: 0.03em;
   color: #fff;
   padding: 12px;
-  background: #36b37f;
+  background: #247F59;
   border-radius: 4px;
   width: 159px;
   align-items: center;
@@ -252,7 +252,7 @@ nav > img {
 }
 
 .resume-button:hover {
-  box-shadow: 0 8px 16px 0 #36b37f3d;
+  box-shadow: 0 8px 16px 0 #247f59;
 }
 
 .resume-button:active {
@@ -327,7 +327,7 @@ nav > img {
   letter-spacing: 0.03em;
   padding: 12px;
   background: #fff;
-  color: #36b37e;
+  color: #247f59;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -369,7 +369,7 @@ nav > img {
 }
 
 .contact-btn:hover {
-  box-shadow: 0 8px 16px 0 #36b37f3d;
+  box-shadow: 0 8px 16px 0;
 }
 
 .contact-btn:active {
@@ -594,7 +594,7 @@ nav > img {
   .resume-button:hover {
     transform: scale(1.3);
     background-color: #fff;
-    color: #36b37f;
+    color: #247f59;
   }
 
   .seepr-button {
@@ -604,6 +604,6 @@ nav > img {
   .seepr-button:hover {
     transform: scale(1.3);
     background-color: #fff;
-    color: #36b37f;
+    color: #247F59;
   }
 }
