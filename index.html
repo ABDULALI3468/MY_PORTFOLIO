@@ -14,7 +14,7 @@
   <body>
     <section class="firstpage">
       <nav class="nav">
-        <h2>Welcome</h2>
+        <p>Welcome</p>
         <img src="./images/Union.png" alt="unio-icon" />
       </nav>
 
@@ -173,17 +173,21 @@
         </div>
       </section>
       <footer class="footer">
-        <section class="lastpage container">
-          <section class="conclusion-text center">
+        <div class="lastpage container">
+          <div class="conclusion-text center">
             <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
-          </section>
+          </div>
           <form class="contact" action="https://formspree.io/f/mlezlqor" method="post">
-            <input class="info" name="Name" type="text" placeholder="Full name" maxlength="30" required />
-            <input class="info" name="Email" type="email" placeholder="Email address" required />
+            <label for="full-name">
+              <input title="type your full name" class="info" id="full-name" name="Name" type="text" placeholder="Full name" maxlength="30" required />
+            </label>
+            <label for="email-address">
+              <input title="type your email address" id="email-address" class="info" name="Email" type="email" placeholder="Email address" required />
+            </label>
             <textarea class="textarea" name="Text" cols="30" rows="10" maxlength="500" placeholder="Enter text area" required></textarea>
             <button class="resume-button contact-btn" type="submit">Get in touch</button>
           </form>
-        </section>
+        </div>
         <ul class="contact-lists">
           <li>
             <a href="#"><img src="./images/twitter.svg" alt="twitter" /></a>
