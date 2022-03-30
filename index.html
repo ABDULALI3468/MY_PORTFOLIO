@@ -38,6 +38,8 @@
     </section>
 
     <section>
+      <label for=""></label>
+      
       <section class="recent container">
         <h2 id="abc">
           My Recent <br />
@@ -178,13 +180,16 @@
             <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
           </div>
           <form class="contact" action="https://formspree.io/f/mlezlqor" method="post">
-            <label for="full-name">
-              <input title="type your full name" class="info" id="full-name" name="Name" type="text" placeholder="Full name" maxlength="30" required />
-            </label>
-            <label for="email-address">
-              <input title="type your email address" id="email-address" class="info" name="Email" type="email" placeholder="Email address" required />
-            </label>
-            <textarea class="textarea" name="Text" cols="30" rows="10" maxlength="500" placeholder="Enter text area" required></textarea>
+            
+            <label for="full-name"></label>
+            <input title="type your full name" class="info" id="full-name" name="Name" type="text" placeholder="Full name" maxlength="30" required />
+            
+            <label for="email-address"></label>
+            <input title="type your email address" id="email-address" class="info" name="Email" type="email" placeholder="Email address" required />
+            
+            <label for="text"></label>
+            <textarea class="textarea" id="text" name="Text" cols="30" rows="10" maxlength="500" placeholder="Enter text area" required></textarea>
+            
             <button class="resume-button contact-btn" type="submit">Get in touch</button>
           </form>
         </div>
