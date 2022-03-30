@@ -104,7 +104,7 @@ nav > img {
   margin-right: auto;
 }
 
-.card-section {
+.card-div {
   display: flex;
   align-self: center;
   flex-direction: column;
@@ -187,7 +187,7 @@ nav > img {
   font-size: 19px;
   letter-spacing: 0.03em;
   color: #fff;
-  background: #247F59;
+  background: #247f59;
   border-radius: 4px;
   padding: 12px;
   margin-top: 29px;
@@ -244,7 +244,7 @@ nav > img {
   letter-spacing: 0.03em;
   color: #fff;
   padding: 12px;
-  background: #247F59;
+  background: #247f59;
   border-radius: 4px;
   width: 159px;
   align-items: center;
@@ -464,6 +464,7 @@ nav > img {
     font-weight: 600;
     border: 1px soild red;
     margin: 20px;
+    list-style-type: none;
   }
 
   .wrapper {
@@ -499,6 +500,15 @@ nav > img {
 
   .group-icons {
     margin-bottom: 86px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .group-icons li {
+    padding-right: 19px;
+    list-style: none;
   }
 
   .grid {
@@ -604,6 +614,6 @@ nav > img {
   .seepr-button:hover {
     transform: scale(1.3);
     background-color: #fff;
-    color: #247F59;
+    color: #247f59;
   }
 }
