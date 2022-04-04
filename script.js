@@ -1,9 +1,8 @@
 const hamburger = document.querySelector(".hamburger");
 const list = document.querySelector(".header-desktop");
-console.log(hamburger);
-console.log(list);
-console.log(document);
+const nav = document.querySelector(".nav");
 
 hamburger.addEventListener("click", () => {
   list.classList.toggle("active");
+  nav.classList.toggle("hidden")
 });
