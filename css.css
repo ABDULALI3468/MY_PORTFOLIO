@@ -93,6 +93,8 @@ nav > img {
 
 .group-icons {
   margin-bottom: 60px;
+  display: flex;
+  
 }
 
 .grid {
@@ -425,10 +427,6 @@ nav > img {
   height: 114px;
 }
 
-.header-desktop {
-  display: none;
-}
-
 .container {
   padding: 0 24px;
 }
@@ -436,6 +434,21 @@ nav > img {
 .lastpage {
   display: flex;
   flex-direction: column;
+}
+
+.header-desktop {
+  display: none;
+}
+
+.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (min-width: 768px) {
