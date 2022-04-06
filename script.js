@@ -1,9 +1,26 @@
 const hamburger = document.querySelector(".hamburger");
-const list = document.querySelector(".header-desktop");
-console.log(hamburger);
-console.log(list);
-console.log(document);
+const mobileMenu = document.querySelector(".header-desktop");
+const welcome = document.querySelector(".welcome");
+const crossicon = document.querySelector(".cross-icon");
+const about = document.querySelector("#about");
+const contact = document.querySelector("#contact");
+const portfolio = document.querySelector("#portfolio");
 
 hamburger.addEventListener("click", () => {
-  list.classList.toggle("active");
+  mobileMenu.style.display = "flex";
+});
+
+crossicon.addEventListener("click", () => {
+  mobileMenu.style.display = "none";
+});
+
+portfolio.addEventListener("click", () => {
+  mobileMenu.style.display = "none";
+});
+about.addEventListener("click", () => {
+  mobileMenu.style.display = "none";
+});
+
+contact.addEventListener("click", () => {
+  mobileMenu.style.display = "none";
 });

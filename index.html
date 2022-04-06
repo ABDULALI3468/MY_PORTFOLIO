@@ -6,34 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My mobile portfolio</title>
     <link rel="stylesheet" href="css.css" />
-    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
-    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <script src="script.js" defer></script>
   </head>
-
-  
 
   <body>
     <section class="firstpage">
+      
       <nav class="nav">
-        <p>Welcome</p>
-        <img class="hamburger" src="./images/Union.png" alt="hamburger menu drawer" />
+        <p class="welcome">Welcome</p>
+        <a href="#" id="menu-btn"><img class="hamburger" src="./images/Union.png" alt="hamburger menu drawer" /></a>
       </nav>
 
       <div class="wrapper">
-        <header>
+        <div class="header">
+          <ul class="header-d">
+            <li id="portfolio" class="header-t"><a href="#Portfolio">Portfolio</a></li>
+            <li id="about" class="header-t"><a href="#About">About</a></li>
+            <li id="contact" class="header-t"><a href="#Contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <header class="header">
           <ul class="header-desktop">
-            <li class="header-text">Portfolio</li>
-            <li class="header-text">About</li>
-            <li class="header-text">Contact</li>
+            <div class="cross-icon">
+              <a href="#"><img src="./images/cross-icon.png" alt="cross-button" /></a>
+            </div>
+            <div class="popup-list">
+              <li id="portfolio" class="header-text"><a href="#Portfolio">Portfolio</a></li>
+              <li id="about" class="header-text"><a href="#About">About</a></li>
+              <li id="contact" class="header-text"><a href="#Contact">Contact</a></li>
+            </div>
           </ul>
         </header>
         <h1 class="head1 intro">Hey there. I’m Abdul Ali <span class="green-color">I’m a software developer</span></h1>
-
         <p class="intro-exp">
           I can help you build a product , feature or website Look through some of my work an experience! If you like what you see and have a project
           you need coded, don’t hestiate to contact me.
@@ -62,7 +69,7 @@
     </section>
 
     <section>
-      <div class="recent container">
+      <div id="Portfolio" class="recent container">
         <h2 id="abc">
           My Recent <br />
           Works
@@ -149,7 +156,7 @@
         </div>
       </div>
 
-      <div class="aboutme">
+      <div class="aboutme" id="About">
         <h2 class="myself">About me</h2>
         <p class="exp">
           I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project
@@ -201,7 +208,7 @@
           <div class="conclusion-text center">
             <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
           </div>
-          <form class="contact" action="https://formspree.io/f/mlezlqor" method="post">
+          <form id="Contact" class="contact" action="https://formspree.io/f/mlezlqor" method="post">
             <label for="full-name"></label>
             <input title="type your full name" class="info" id="full-name" name="Name" type="text" placeholder="Full name" maxlength="30" required />
 
@@ -234,5 +241,6 @@
         <p class="email">mrabdulali2003@gmail.com</p>
       </footer>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
