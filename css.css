@@ -498,7 +498,7 @@
   align-items: flex-start;
 }
 
-.header-d .header-t {
+.header-d {
   display: none;
 }
 
@@ -529,11 +529,17 @@
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
-    border: 1px soild red;
     margin: 20px;
+    color: #3a4a42;
+  }
+
+  .header-t a {
     text-decoration: none;
     color: #3a4a42;
-
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
   }
 
   .wrapper {
