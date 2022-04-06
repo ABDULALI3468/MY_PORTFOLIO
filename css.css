@@ -481,7 +481,7 @@
   border-radius: 20px;
 }
 
-.header-text {
+.header-desktop-text {
   font-family: "Inter", sans-serif;
   color: #3a4a42;
   width: 251px;
@@ -498,7 +498,7 @@
   align-items: flex-start;
 }
 
-.header-d {
+.header-mobile {
   display: none;
 }
 
@@ -515,7 +515,7 @@
     padding-bottom: 160px;
   }
 
-  .header-d {
+  .header-mobile {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -524,7 +524,7 @@
     height: 70px;
   }
 
-  .header-t {
+  .header-mobile-text {
     font-size: 15px;
     font-family: "Inter", sans-serif;
     font-style: normal;
@@ -533,7 +533,7 @@
     color: #3a4a42;
   }
 
-  .header-t a {
+  .header-mobile-text a {
     text-decoration: none;
     color: #3a4a42;
     font-size: 15px;
