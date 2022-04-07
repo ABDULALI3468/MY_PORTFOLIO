@@ -1,3 +1,5 @@
+const closePop = document.querySelector('.cross-popup-icon');
+
 function cards() {
   const body = document.body;
   const grid_container = document.querySelector(".grid");
@@ -174,8 +176,12 @@ console.log(story_button)
 
 for (let i=0 ; i<story_button.length ; i++) {
   story_button[i].addEventListener("click", () => {
-    console.log("working");
     popup_container.classList.remove("display-none");
     popup_container.classList.add("display-flex");
   });
 }
+
+closePop.addEventListener ('click', () => {
+  popup_container.classList.add("display-none");
+  popup_container.classList.remove("display-flex");
+})
