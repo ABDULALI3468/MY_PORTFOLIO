@@ -13,10 +13,8 @@
   display: flex;
 }
 
-
 .mobile-popup-container {
   position: fixed;
-  /* display: block; */
   top: 0;
   left: 0;
   width: 100%;
@@ -24,9 +22,7 @@
   padding: 16px;
   overflow: auto;
   flex-direction: column;
-
   background: #fff;
-  /* background-size: ; */
 }
 
 .popup-image img {
