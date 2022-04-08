@@ -9,30 +9,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet" />
   </head>
 
   <body>
     <section class="firstpage">
-      
       <nav class="nav">
         <p class="welcome">Welcome</p>
         <a href="#"><img class="hamburger" src="./images/Union.png" alt="hamburger menu drawer" /></a>
       </nav>
 
       <div class="wrapper">
-        
-          <ul class="header-mobile">
-            <li class="header-mobile-text"><a href="#Portfolio">Portfolio</a></li>
-            <li class="header-mobile-text"><a href="#About">About</a></li>
-            <li class="header-mobile-text"><a href="#Contact">Contact</a></li>
-          </ul>
-        
+        <ul class="header-mobile">
+          <li class="header-mobile-text"><a href="#Portfolio">Portfolio</a></li>
+          <li class="header-mobile-text"><a href="#About">About</a></li>
+          <li class="header-mobile-text"><a href="#Contact">Contact</a></li>
+        </ul>
 
         <header class="header">
           <div class="header-desktop">
-            
             <div class="cross-icon"><img src="./images/cross-icon.png" alt="cross-button" /></div>
-            
+
             <ul class="popup-list">
               <li id="portfolio" class="header-desktop-text"><a href="#Portfolio">Portfolio</a></li>
               <li id="about" class="header-desktop-text"><a href="#About">About</a></li>
@@ -219,6 +218,9 @@
             <textarea class="textarea" id="text" name="Text" cols="30" rows="10" maxlength="500" placeholder="Enter text area" required></textarea>
 
             <button class="resume-button contact-btn" type="submit">Get in touch</button>
+            <div class="error hide">
+              <p class="error-message"></p>
+            </div>
           </form>
         </div>
         <ul class="contact-lists">
@@ -242,5 +244,6 @@
       </footer>
     </section>
     <script src="script.js"></script>
+    <script src="form-validation.js"></script>
   </body>
 </html>
