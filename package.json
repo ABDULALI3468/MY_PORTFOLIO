@@ -1,0 +1,23 @@
+{
+  "name": "my_portfolio",
+  "version": "1.0.0",
+  "description": "> Description : \r                 This is a website portfolio project in which i created the my portfolio website.",
+  "main": "popup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ABDULALI3468/MY_PORTFOLIO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ABDULALI3468/MY_PORTFOLIO/issues"
+  },
+  "homepage": "https://github.com/ABDULALI3468/MY_PORTFOLIO#readme",
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  }
+}

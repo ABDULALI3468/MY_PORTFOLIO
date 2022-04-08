@@ -5,11 +5,28 @@
   font-family: "Inter", sans-serif;
 }
 
-.mobile-popup-container {
+.display-none {
+  display: none;
+}
+
+.display-flex {
   display: flex;
-  flex-direction: column;
-  border: 1px solid red;
+}
+
+
+.mobile-popup-container {
+  position: fixed;
+  /* display: block; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   padding: 16px;
+  overflow: auto;
+  flex-direction: column;
+
+  background: #fff;
+  /* background-size: ; */
 }
 
 .popup-image img {
@@ -18,12 +35,7 @@
   margin-bottom: 12px;
 }
 
-.title-and-techs {
-}
-
 .popup-title {
-  /* display: block; */
-  /* margin-right: 50px; */
   width: 259px;
   height: 135px;
   font-style: normal;
@@ -36,15 +48,16 @@
 
 .popup-tech {
   list-style-type: none;
-  /* display: flex; */
   margin-bottom: 24px;
+  display: flex;
 }
 
-.popup-tech li {
+.popup-tech-li {
   text-align: center;
-  display: inline;
   background: #ebf0ee;
   border-radius: 4px;
+  margin-left: 4px;
+  margin-right: 4px;
   width: auto;
   height: auto;
   padding: 8px 12px;
@@ -65,7 +78,6 @@
   line-height: 24px;
   color: #344563;
   margin-bottom: 12px;
-  
 }
 
 .popup-buttons {
@@ -83,13 +95,10 @@
   background: #36b37f;
   border-radius: 4px;
   height: 100px;
-
   background-size: 141px 48px;
-
   width: auto;
   height: auto;
   padding: 12px;
-  
 }
 
 .live-button p {
@@ -98,7 +107,45 @@
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-
   letter-spacing: 0.03em;
   color: #fff;
+}
+
+.icon-image {
+  display: flex;
+  flex-direction: column;
+}
+
+.back-cross {
+  display: flex;
+  width: 40px;
+  margin-bottom: 12px;
+  height: 40px;
+  border-radius: 8px;
+  align-self: flex-end;
+}
+
+.cross-popup-icon {
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 8px;
+  background-color: #ebecf0;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  .popup-title {
+    width: auto;
+    height: auto;
+  }
+
+  .popup-buttons {
+    position: relative;
+    left: 420px;
+    bottom: 165px;
+    right: 0;
+  }
 }
