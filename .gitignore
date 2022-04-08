@@ -1,4 +1,6 @@
 # .gitignore
 node_modules/
+popup.js
+css.css
 
 
