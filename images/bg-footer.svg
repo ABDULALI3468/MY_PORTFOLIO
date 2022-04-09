@@ -2,7 +2,7 @@
 <g clip-path="url(#clip0_102949_58)">
 <path d="M1317.28 489.708L1498.94 460.478L1599.49 444.299L1543.27 385.507L1278.94 428.039L1287.27 455.577L1317.28 489.708Z" fill="#172B4D"/>
 <path d="M1480.62 8.95481L1534.68 41.5089L1384.47 465.605L1317.28 489.708L1287.26 455.577L1278.94 428.04L1377.52 185.972L1401.46 163.786L1391.81 140.816L1436.16 27.567L1480.62 8.95481Z" fill="white"/>
-<mask id="mask0_102949_58" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1278" y="8" width="257" height="482">
+<mask id="mask0_102949_58" style="mask-type: alpha;" maskUnits="userSpaceOnUse" x="1278" y="8" width="257" height="482">
 <path d="M1480.62 8.95481L1534.68 41.5089L1384.47 465.605L1317.28 489.708L1287.26 455.577L1278.94 428.04L1377.52 185.972L1401.46 163.786L1391.81 140.816L1436.16 27.567L1480.62 8.95481Z" fill="white"/>
 </mask>
 <g mask="url(#mask0_102949_58)">
@@ -35,7 +35,7 @@
 <path d="M64.3493 403.634L49.5947 323.319L75.9422 370.449L64.3493 403.634Z" fill="white" stroke="#36B37E" stroke-width="1.55764" stroke-miterlimit="10" stroke-linejoin="round"/>
 <path d="M-59.2616 267.882L17.8667 267.162" stroke="#36B37E" stroke-width="1.55764" stroke-miterlimit="10" stroke-linejoin="round"/>
 <path d="M32.238 254.966L11.0463 256.693L4.83141 267.222L27.9054 284.858L32.238 254.966Z" fill="#C5E9DA" stroke="#36B37E" stroke-width="1.55764" stroke-miterlimit="10" stroke-linejoin="round"/>
-<mask id="mask1_102949_58" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-70" y="201" width="147" height="80">
+<mask id="mask1_102949_58" style="mask-type: alpha;" maskUnits="userSpaceOnUse" x="-70" y="201" width="147" height="80">
 <path d="M-13.2932 244.643L1.13309 248.954L10.7211 239.016L24.4256 243.328L14.8384 252.905L28.3628 257.037L18.9557 266.795L5.25038 262.844L-8.81585 258.893L-18.9457 269.013L-33.7337 265.063L-44.2253 275.544L-59.7352 271.596L-48.7018 260.933L-38.2102 250.452L-23.423 254.763L-13.2932 244.643Z" fill="#C5E9DA"/>
 <path d="M-3.16405 234.884L6.604 225.126L20.3084 229.438L10.7213 239.016L-3.16405 234.884Z" fill="#36B37E"/>
 <path d="M37.589 247.46L24.4255 243.327L33.6517 233.75L20.3082 229.438L29.7145 220.041L42.6971 224.354L55.3188 228.668L46.6344 238.063L59.2569 242.016L71.6986 246.149L63.1951 255.364L50.5725 251.412L41.3463 260.989L28.3628 257.037L37.589 247.46Z" fill="#5E78A5"/>
@@ -58,7 +58,7 @@
 <path d="M368.573 368.776L330.083 359.369" stroke="#36B37E" stroke-width="1.63467" stroke-miterlimit="10" stroke-linejoin="round"/>
 <path d="M355.258 365.509L361.947 360.16L361.224 367.019L356.104 370.717L355.258 365.509Z" fill="white" stroke="#36B37E" stroke-width="1.63467" stroke-miterlimit="10" stroke-linejoin="round"/>
 <path d="M361.947 360.16L360.298 336.875" stroke="#36B37E" stroke-width="1.63467" stroke-miterlimit="10" stroke-linejoin="round"/>
-<mask id="mask2_102949_58" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="290" y="358" width="80" height="39">
+<mask id="mask2_102949_58" style="mask-type: alpha;" maskUnits="userSpaceOnUse" x="290" y="358" width="80" height="39">
 <path d="M291.146 382.929L323.217 359.01L334.524 360.336L368.573 368.776L364.439 370.739L310.986 396.127L291.146 382.929Z" fill="white" stroke="#36B37E" stroke-width="1.63467" stroke-miterlimit="10" stroke-linejoin="round"/>
 </mask>
 <g mask="url(#mask2_102949_58)">

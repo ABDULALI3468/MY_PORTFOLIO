@@ -1,51 +1,50 @@
 const closePop = document.querySelector('.cross-popup-icon');
 
 function cards() {
-  const body = document.body;
-  const grid_container = document.querySelector('.grid');
+  const gridContainer = document.querySelector('.grid');
 
-  const div_stories_card = document.createElement('div');
-  div_stories_card.classList.add('stories-card');
+  const divStoriesCard = document.createElement('div');
+  divStoriesCard.classList.add('stories-card');
 
-  const div_white_back = document.createElement('div');
-  div_white_back.classList.add('white-back');
+  const divWhiteBack = document.createElement('div');
+  divWhiteBack.classList.add('white-back');
 
-  const h3_card_title = document.createElement('h3');
-  h3_card_title.classList.add('card-title');
-  h3_card_title.innerText = 'Multi-Post Stories Gain+Glory';
+  const h3CardTitle = document.createElement('h3');
+  h3CardTitle.classList.add('card-title');
+  h3CardTitle.innerText = 'Multi-Post Stories Gain+Glory';
 
-  const ul_list = document.createElement('ul');
-  ul_list.classList.add('list');
+  const ulList = document.createElement('ul');
+  ulList.classList.add('list');
 
-  const li_lang_name_1 = document.createElement('li');
-  li_lang_name_1.classList.add('lang-name');
-  li_lang_name_1.innerText = 'Ruby on rails';
-  const li_lang_name_2 = document.createElement('li');
-  li_lang_name_2.classList.add('lang-name');
-  li_lang_name_2.innerText = 'css';
-  const li_lang_name_3 = document.createElement('li');
-  li_lang_name_3.classList.add('lang-name');
-  li_lang_name_3.innerText = 'Javascript';
-  const li_lang_name_4 = document.createElement('li');
-  li_lang_name_4.classList.add('lang-name');
-  li_lang_name_4.innerText = 'html';
+  const liLangName1 = document.createElement('li');
+  liLangName1.classList.add('lang-name');
+  liLangName1.innerText = 'Ruby on rails';
+  const liLangName2 = document.createElement('li');
+  liLangName2.classList.add('lang-name');
+  liLangName2.innerText = 'css';
+  const liLangName3 = document.createElement('li');
+  liLangName3.classList.add('lang-name');
+  liLangName3.innerText = 'Javascript';
+  const liLangName4 = document.createElement('li');
+  liLangName4.classList.add('lang-name');
+  liLangName4.innerText = 'html';
 
-  const p_seepr_button = document.createElement('p');
-  p_seepr_button.classList.add('seepr-button');
-  p_seepr_button.innerText = 'See Project';
+  const pseeprbutton = document.createElement('p');
+  pseeprbutton.classList.add('seepr-button');
+  pseeprbutton.innerText = 'See Project';
 
-  div_white_back.appendChild(h3_card_title);
-  div_white_back.appendChild(ul_list);
-  ul_list.appendChild(li_lang_name_1);
-  ul_list.appendChild(li_lang_name_2);
-  ul_list.appendChild(li_lang_name_3);
-  ul_list.appendChild(li_lang_name_4);
-  div_white_back.appendChild(p_seepr_button);
-  div_stories_card.appendChild(div_white_back);
-  grid_container.appendChild(div_stories_card);
+  divWhiteBack.appendChild(h3CardTitle);
+  divWhiteBack.appendChild(ulList);
+  ulList.appendChild(liLangName1);
+  ulList.appendChild(liLangName2);
+  ulList.appendChild(liLangName3);
+  ulList.appendChild(liLangName4);
+  divWhiteBack.appendChild(pseeprbutton);
+  divStoriesCard.appendChild(divWhiteBack);
+  gridContainer.appendChild(divStoriesCard);
 }
 
-for (let i = 1; i < 7; i++) {
+for (let i = 1; i < 7; i += 1) {
   cards();
 }
 
@@ -56,127 +55,116 @@ const projects = [
     imageUrl: './images/popup-mobile-pic.svg',
     technologies: ['Ruby on rails', 'css', 'JavaScript', 'html'],
     liveVersion: 'https://www.google.com/',
-    source: 'https://github.com/'
-  }
+    source: 'https://github.com/',
+  },
 ];
 
-console.log(projects[0]['imageUrl'])
+const popupcontainer = document.createElement('section');
+popupcontainer.classList.add('mobile-popup-container');
+popupcontainer.classList.add('display-none');
 
+const diviconimage = document.createElement('div');
+diviconimage.classList.add('icon-image');
 
-const body = document.body;
-const popup_container = document.createElement('section');
-popup_container.classList.add('mobile-popup-container');
-popup_container.classList.add('display-none');
+const divbackcross = document.createElement('div');
+divbackcross.classList.add('back-cross');
 
-const div_icon_image = document.createElement('div');
-div_icon_image.classList.add('icon-image');
+const imgcross = document.createElement('img');
+imgcross.classList.add('cross-popup-icon');
+imgcross.src = './images/cross-icon.png';
+imgcross.alt = '';
 
-const div_back_cross = document.createElement('div');
-div_back_cross.classList.add('back-cross');
+const divpopupimage = document.createElement('div');
+divpopupimage.classList.add('popup-image');
 
-const img_cross = document.createElement('img');
-img_cross.classList.add('cross-popup-icon');
-img_cross.src = './images/cross-icon.png';
-img_cross.alt = '';
+const popupimage = document.createElement('img');
+popupimage.src = projects[0].imageUrl;
 
-const div_popup_image = document.createElement('div');
-div_popup_image.classList.add('popup-image');
+const titleandtech = document.createElement('div');
+titleandtech.classList.add('title-and-tech');
 
+const divtitle = document.createElement('div');
+const popuptitle = document.createElement('h1');
+popuptitle.innerText = projects[0].title;
+popuptitle.classList.add('popup-title');
 
-const popup_image = document.createElement('img');
-popup_image.src = projects[0]['imageUrl'];
+const divtech = document.createElement('div');
+const divul = document.createElement('ul');
+divul.classList.add('popup-tech');
 
+const divli1 = document.createElement('li');
+divli1.innerText = 'Html';
+divli1.classList.add('popup-tech-li');
+const divli2 = document.createElement('li');
+divli2.innerText = 'Ruby in rails';
+divli2.classList.add('popup-tech-li');
+const divli3 = document.createElement('li');
+divli3.innerText = 'css';
+divli3.classList.add('popup-tech-li');
+const divli4 = document.createElement('li');
+divli4.innerText = 'Javascript';
+divli4.classList.add('popup-tech-li');
 
-const title_and_tech = document.createElement('div');
-title_and_tech.classList.add('title-and-tech');
-
-const div_title = document.createElement('div');
-const popup_title = document.createElement('h1');
-popup_title.innerText = projects[0]['title'];
-popup_title.classList.add('popup-title');
-
-const div_tech = document.createElement('div');
-const div_ul = document.createElement('ul');
-div_ul.classList.add('popup-tech')
-
-const div_li_1 = document.createElement('li');
-div_li_1.innerText = 'Html'
-div_li_1.classList.add('popup-tech-li');
-const div_li_2 = document.createElement('li');
-div_li_2.innerText = 'Ruby in rails';
-div_li_2.classList.add('popup-tech-li');
-const div_li_3 = document.createElement('li');
-div_li_3.innerText = 'css';
-div_li_3.classList.add('popup-tech-li');
-const div_li_4 = document.createElement('li');
-div_li_4.innerText = 'Javascript';
-div_li_4.classList.add('popup-tech-li');
-
-
-
-const description = document.createElement('div')
-description.classList.add('popup-description')
-description.innerText = projects[0]['description']
-
+const description = document.createElement('div');
+description.classList.add('popup-description');
+description.innerText = projects[0].description;
 
 const buttons = document.createElement('div');
-buttons.classList.add('popup-buttons')
+buttons.classList.add('popup-buttons');
 
 const live = document.createElement('div');
 live.classList.add('live-button');
-const p_live = document.createElement('p');
-p_live.innerText = 'See Live'
-const img_live = document.createElement('img');
-img_live.src = './images/live-icon.svg';
-img_live.alt =  '';
+const plive = document.createElement('p');
+plive.innerText = 'See Live';
+const imglive = document.createElement('img');
+imglive.src = './images/live-icon.svg';
+imglive.alt = '';
 
 const source = document.createElement('div');
 source.classList.add('live-button');
 source.classList.add('ml');
-const p_source = document.createElement('p');
-p_source.innerText = 'See Source';
-const img_source = document.createElement('img');
-img_source.src = './images/source-icon.svg';
-img_source.alt = '';
+const psource = document.createElement('p');
+psource.innerText = 'See Source';
+const imgsource = document.createElement('img');
+imgsource.src = './images/source-icon.svg';
+imgsource.alt = '';
 
+document.body.appendChild(popupcontainer);
+popupcontainer.appendChild(diviconimage);
+diviconimage.appendChild(divbackcross);
+divbackcross.appendChild(imgcross);
+diviconimage.appendChild(divpopupimage);
+divpopupimage.appendChild(popupimage);
 
-body.appendChild(popup_container);
-popup_container.appendChild(div_icon_image);
-div_icon_image.appendChild(div_back_cross);
-div_back_cross.appendChild(img_cross)
-div_icon_image.appendChild(div_popup_image);
-div_popup_image.appendChild(popup_image);
+popupcontainer.appendChild(titleandtech);
+titleandtech.appendChild(divtitle);
+divtitle.appendChild(popuptitle);
+titleandtech.appendChild(divtech);
+divtech.appendChild(divul);
+divul.appendChild(divli1);
+divul.appendChild(divli2);
+divul.appendChild(divli3);
+divul.appendChild(divli4);
 
-popup_container.appendChild(title_and_tech);
-title_and_tech.appendChild(div_title);
-div_title.appendChild(popup_title);
-title_and_tech.appendChild(div_tech);
-div_tech.appendChild(div_ul);
-div_ul.appendChild(div_li_1)
-div_ul.appendChild(div_li_2)
-div_ul.appendChild(div_li_3)
-div_ul.appendChild(div_li_4)
-
-popup_container.appendChild(description);
-popup_container.appendChild(buttons);
+popupcontainer.appendChild(description);
+popupcontainer.appendChild(buttons);
 buttons.appendChild(live);
-live.appendChild(p_live);
-live.appendChild(img_live);
+live.appendChild(plive);
+live.appendChild(imglive);
 buttons.appendChild(source);
-source.appendChild(p_source);
-source.appendChild(img_source);
+source.appendChild(psource);
+source.appendChild(imgsource);
 
-const story_button = document.querySelectorAll('.seepr-button');
-console.log(story_button)
+const storybutton = document.querySelectorAll('.seepr-button');
 
-for (let i=0 ; i<story_button.length ; i++) {
-  story_button[i].addEventListener('click', () => {
-    popup_container.classList.remove('display-none');
-    popup_container.classList.add('display-flex');
+for (let i = 0; i < storybutton.length; i += 1) {
+  storybutton[i].addEventListener('click', () => {
+    popupcontainer.classList.remove('display-none');
+    popupcontainer.classList.add('display-flex');
   });
 }
 
-div_back_cross.addEventListener('click', () => {
-  popup_container.classList.remove('display-flex');
-  popup_container.classList.add('display-none');
+divbackcross.addEventListener('click', () => {
+  popupcontainer.classList.remove('display-flex');
+  popupcontainer.classList.add('display-none');
 });
