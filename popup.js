@@ -52,13 +52,12 @@ for (let i = 1; i < 7; i++) {
 const projects = [
   {
     title: 'Multi-Post Stories Gain+Glory',
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     imageUrl: './images/popup-mobile-pic.svg',
     technologies: ['Ruby on rails', 'css', 'JavaScript', 'html'],
     liveVersion: 'https://www.google.com/',
-    source: 'https://github.com/',
-  },
+    source: 'https://github.com/'
+  }
 ];
 
 console.log(projects[0]['imageUrl'])

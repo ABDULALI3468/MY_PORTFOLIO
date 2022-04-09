@@ -66,8 +66,8 @@
 
 .popup-description {
   width: auto;
+  font-family: "Inter", sans-serif;
   height: auto;
-  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -91,7 +91,6 @@
   background: #36b37f;
   border-radius: 4px;
   height: 100px;
-  background-size: 141px 48px;
   width: auto;
   height: auto;
   padding: 12px;
