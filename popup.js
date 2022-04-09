@@ -8,9 +8,9 @@ const popupimage = document.createElement('img');
 const titleandtech = document.createElement('div');
 const divtitle = document.createElement('div');
 const popuptitle = document.createElement('h1');
-const description = document.createElement('div'); 
+const description = document.createElement('div');
 
-function cards(name, desc, tech,img) {
+function cards(name, desc, tech, img) {
   const gridContainer = document.querySelector('.grid');
 
   const divStoriesCard = document.createElement('div');
@@ -32,7 +32,6 @@ function cards(name, desc, tech,img) {
     liLangName.innerText = tech[i];
     ulList.appendChild(liLangName);
   }
-  
 
   const pseeprbutton = document.createElement('p');
   pseeprbutton.classList.add('seepr-button');
@@ -40,7 +39,6 @@ function cards(name, desc, tech,img) {
 
   divWhiteBack.appendChild(h3CardTitle);
   divWhiteBack.appendChild(ulList);
-  
   divWhiteBack.appendChild(pseeprbutton);
   divStoriesCard.appendChild(divWhiteBack);
   gridContainer.appendChild(divStoriesCard);
@@ -133,14 +131,12 @@ const createPopup = (name, img, desc, tech) => {
 
   popuptitle.innerText = name;
   popuptitle.classList.add('popup-title');
-  
+
   for (let i = 0; i < tech.length; i += 1) {
     const divli = document.createElement('li');
-    
     divli.innerText = tech[i];
     divli.classList.add('popup-tech-li');
     divul.appendChild(divli);
-    
   }
 
   description.classList.add('popup-description');
@@ -182,7 +178,6 @@ const createPopup = (name, img, desc, tech) => {
   divtitle.appendChild(popuptitle);
   divtech.appendChild(divul);
   titleandtech.appendChild(divtech);
-  
 
   popupcontainer.appendChild(description);
   popupcontainer.appendChild(buttons);
