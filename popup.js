@@ -204,10 +204,16 @@ divbackcross.addEventListener('click', () => {
   const popup = document.querySelector('.mobile-popup-container');
   // remove children elements...
   const techDiv = popup.querySelector('.title-and-tech');
+  const popupTech = popup.querySelector('.popup-tech');
   techDiv.childNodes.forEach((tech) => {
     techDiv.removeChild(tech);
   });
   techDiv.parentElement.removeChild(techDiv);
+
+  popupTech.childNodes.forEach((tech) => {
+    popupTech.removeChild(tech);
+  });
+  popupTech.parentElement.removeChild(popupTech);
 
   // remove children elements...
   popup.childNodes.forEach((child) => {
