@@ -8,9 +8,9 @@ const popupimage = document.createElement('img');
 const titleandtech = document.createElement('div');
 const divtitle = document.createElement('div');
 const popuptitle = document.createElement('h1');
-const description = document.createElement('div');
+const description = document.createElement('div'); 
 
-function cards() {
+function cards(name, desc, tech,img) {
   const gridContainer = document.querySelector('.grid');
 
   const divStoriesCard = document.createElement('div');
@@ -21,23 +21,18 @@ function cards() {
 
   const h3CardTitle = document.createElement('h3');
   h3CardTitle.classList.add('card-title');
-  h3CardTitle.innerText = 'Multi-Post Stories Gain+Glory';
+  h3CardTitle.innerText = name;
 
   const ulList = document.createElement('ul');
   ulList.classList.add('list');
 
-  const liLangName1 = document.createElement('li');
-  liLangName1.classList.add('lang-name');
-  liLangName1.innerText = 'Ruby on rails';
-  const liLangName2 = document.createElement('li');
-  liLangName2.classList.add('lang-name');
-  liLangName2.innerText = 'css';
-  const liLangName3 = document.createElement('li');
-  liLangName3.classList.add('lang-name');
-  liLangName3.innerText = 'Javascript';
-  const liLangName4 = document.createElement('li');
-  liLangName4.classList.add('lang-name');
-  liLangName4.innerText = 'html';
+  for (let i = 0; i < tech.length; i += 1) {
+    const liLangName = document.createElement('li');
+    liLangName.classList.add('lang-name');
+    liLangName.innerText = tech[i];
+    ulList.appendChild(liLangName);
+  }
+  
 
   const pseeprbutton = document.createElement('p');
   pseeprbutton.classList.add('seepr-button');
@@ -45,17 +40,10 @@ function cards() {
 
   divWhiteBack.appendChild(h3CardTitle);
   divWhiteBack.appendChild(ulList);
-  ulList.appendChild(liLangName1);
-  ulList.appendChild(liLangName2);
-  ulList.appendChild(liLangName3);
-  ulList.appendChild(liLangName4);
+  
   divWhiteBack.appendChild(pseeprbutton);
   divStoriesCard.appendChild(divWhiteBack);
   gridContainer.appendChild(divStoriesCard);
-}
-
-for (let i = 1; i < 7; i += 1) {
-  cards();
 }
 
 const projects = [
@@ -120,9 +108,12 @@ const projects = [
   },
 ];
 
+for (let i = 0; i < projects.length; i += 1) {
+  cards(projects[i].title, projects[i].description, projects[i].technologies, projects[i].imageUrl);
+}
+
 const createPopup = (name, img, desc, tech) => {
   const divul = document.createElement('ul');
-  console.log('iside creat pop');
   popupcontainer.classList.add('mobile-popup-container');
   popupcontainer.classList.add('display-none');
 
@@ -142,15 +133,14 @@ const createPopup = (name, img, desc, tech) => {
 
   popuptitle.innerText = name;
   popuptitle.classList.add('popup-title');
-
+  
   for (let i = 0; i < tech.length; i += 1) {
-    console.log('loop throw tech list');
     const divli = document.createElement('li');
-    console.log(divli);
+    
     divli.innerText = tech[i];
     divli.classList.add('popup-tech-li');
     divul.appendChild(divli);
-    console.log(divul);
+    
   }
 
   description.classList.add('popup-description');
@@ -190,8 +180,9 @@ const createPopup = (name, img, desc, tech) => {
   popupcontainer.appendChild(titleandtech);
   titleandtech.appendChild(divtitle);
   divtitle.appendChild(popuptitle);
-  titleandtech.appendChild(divtech);
   divtech.appendChild(divul);
+  titleandtech.appendChild(divtech);
+  
 
   popupcontainer.appendChild(description);
   popupcontainer.appendChild(buttons);
@@ -207,7 +198,6 @@ const storybutton = document.querySelectorAll('.seepr-button');
 
 for (let i = 0; i < storybutton.length; i += 1) {
   storybutton[i].addEventListener('click', () => {
-    console.log('show popup');
     createPopup(projects[i].title, projects[i].imageUrl, projects[i].description,
       projects[i].technologies);
     popupcontainer.classList.remove('display-none');
