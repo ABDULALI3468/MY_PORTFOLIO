@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My mobile portfolio</title>
+    <link rel="stylesheet" href="css.css" />
+    <link rel="stylesheet" href="popup.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <section class="firstpage">
+      <nav class="nav">
+        <p class="welcome">Welcome</p>
+        <a href="#"><img class="hamburger" src="./images/Union.png" alt="hamburger menu drawer" /></a>
+      </nav>
+
+      <div class="wrapper">
+        <ul class="header-mobile">
+          <li class="header-mobile-text"><a href="#Portfolio">Portfolio</a></li>
+          <li class="header-mobile-text"><a href="#About">About</a></li>
+          <li class="header-mobile-text"><a href="#Contact">Contact</a></li>
+        </ul>
+
+        <header class="header">
+          <div class="header-desktop">
+            <div class="cross-icon"><img src="./images/cross-icon.png" alt="cross-button" /></div>
+
+            <ul class="popup-list">
+              <li id="portfolio" class="header-desktop-text"><a href="#Portfolio">Portfolio</a></li>
+              <li id="about" class="header-desktop-text"><a href="#About">About</a></li>
+              <li id="contact" class="header-desktop-text"><a href="#Contact">Contact</a></li>
+            </ul>
+          </div>
+        </header>
+        <h1 class="head1 intro">Hey there. I’m Abdul Ali <span class="green-color">I’m a software developer</span></h1>
+        <p class="intro-exp">
+          I can help you build a product , feature or website Look through some of my work an experience! If you like what you see and have a project
+          you need coded, don’t hestiate to contact me.
+        </p>
+        <div class="bottom-img">
+          <ul class="group-icons">
+            <li>
+              <a href="#"><img src="./images/twitter.svg" alt="link to my twitter" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/linkdin.svg" alt="link to my linkdin" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/medium.svg" alt="link to my medium" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/github.svg" alt="link to my github" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/angellist.svg" alt="link to my angellist" /></a>
+            </li>
+          </ul>
+          <a class="img2" href="#abc"><img src="./images/comedown.png" alt="" /></a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="Portfolio" class="recent container">
+        <h2 id="abc">
+          My Recent <br />
+          Works
+        </h2>
+        <img src="./images/line.png" alt="" />
+      </div>
+      <div class="grid container"></div>
+
+      <div class="aboutme" id="About">
+        <h2 class="myself">About me</h2>
+        <p class="exp">
+          I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project
+          you need coded,don’t hestiate to contact me.
+        </p>
+        <p class="resume-button">Get My Resume</p>
+      </div>
+
+      <div class="container">
+        <div class="grid">
+          <div class="languages center">
+            <img class="lang-icon" src="./images/group-icon.png" alt="my specialized languages" />
+            <h3 class="lang-heading">Languages</h3>
+            <ul class="lang-list mr-LR mr-B">
+              <li class="langs-name">JavaScript</li>
+              <li class="langs-name">Ruby</li>
+              <li class="langs-name">html</li>
+              <li class="langs-name">CSS</li>
+            </ul>
+          </div>
+
+          <div class="languages center">
+            <img class="lang-icon" src="./images/fricon.png" alt="my specialized Frameworks" />
+            <h3 class="lang-heading">Frameworks</h3>
+            <ul class="lang-list mr-LR">
+              <li class="langs-name">Bootstrap</li>
+              <li class="langs-name">Ruby on rails</li>
+              <li class="langs-name">RSpec</li>
+              <li class="langs-name">Capybara</li>
+              <li class="langs-name">Selenium</li>
+            </ul>
+          </div>
+
+          <div class="languages center">
+            <img class="lang-icon" src="./images/skill-icon.png" alt="skills i have mastered" />
+            <h3 class="lang-heading">Skills</h3>
+            <ul class="lang-list">
+              <li class="langs-name">Codekit</li>
+              <li class="langs-name">GitHub</li>
+              <li class="langs-name">Codepen</li>
+              <li class="langs-name">Gitlab</li>
+              <li class="langs-name">Terminal</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="lastpage container">
+          <div class="conclusion-text center">
+            <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+          </div>
+          <form id="Contact" class="contact" action="https://formspree.io/f/mlezlqor" method="post">
+            <label for="full-name"></label>
+            <input title="type your full name" class="info" id="full-name" name="Name" type="text" placeholder="Full name" maxlength="30" required />
+
+            <label for="email-address"></label>
+            <input title="type your email address" id="email-address" class="info" name="Email" type="email" placeholder="Email address" required />
+
+            <label for="text"></label>
+            <textarea class="textarea" id="text" name="Text" cols="30" rows="10" maxlength="500" placeholder="Enter text area" required></textarea>
+
+            <button class="resume-button contact-btn" type="submit">Get in touch</button>
+          </form>
+        </div>
+        <ul class="contact-lists">
+          <li>
+            <a href="#"><img src="./images/twitter.svg" alt="link to my twitter" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./images/linkdin.svg" alt="link to my linkdin" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./images/medium.svg" alt="link to my medium" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./images/github.svg" alt="link to my github" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./images/angellist.svg" alt="link to my angellist" /></a>
+          </li>
+        </ul>
+        <p class="email">mrabdulali2003@gmail.com</p>
+      </footer>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
