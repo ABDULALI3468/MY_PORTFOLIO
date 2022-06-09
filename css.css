@@ -502,8 +502,32 @@
   display: none;
 }
 
+.error-message {
+  font-weight: 900;
+  padding: 0 12px;
+  color: salmon;
+  align-self: flex-start;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  width: auto;
+}
+
 .hide {
   display: none;
+}
+
+.error {
+  text-align: center;
+  align-self: center;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  border-radius: 8px;
+  background-color: greenyellow;
+  margin-bottom: 5px;
+  width: 60%;
+  height: auto;
+  margin-top: 12px;
+  transform: scale(1.3);
 }
 
 @media screen and (min-width: 768px) {
