@@ -38,13 +38,12 @@
 
 .popup-title {
   width: 259px;
-  height: 135px;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
-  margin-bottom: 12px;
+  margin-top: 10px;
 }
 
 .popup-tech {
@@ -100,7 +99,8 @@
   padding: 12px;
 }
 
-.live-button p {
+.live {
+  text-decoration: none;
   margin-right: 16px;
   font-style: normal;
   font-weight: 500;
@@ -142,9 +142,10 @@
   }
 
   .popup-buttons {
-    position: relative;
-    left: 287px;
-    bottom: 196px;
+    position: absolute;
+    right: 25px;
+    bottom: 188px;
+    width: 300px;
   }
 
   .popup-image img {
