@@ -47,62 +47,56 @@ function cards(name, desc, tech, img) {
 const projects = [
   {
     title: "Daily Life Todo List will make your life worthy.",
-    description:
-      "To-do list is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. One of the most important reasons for keeping a to-do list is the organization. Organizing your tasks with a list can make everything much more manageable and make you feel grounded. Seeing a clear outline of your completed and uncompleted tasks will help you feel organized and stay mentally focused.",
+    description: "To-do list is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. One of the most important reasons for keeping a to-do list is the organization. Organizing your tasks with a list can make everything much more manageable and make you feel grounded. Seeing a clear outline of your completed and uncompleted tasks will help you feel organized and stay mentally focused.",
     imageUrl: "./images/todolist.png",
     technologies: ["Ruby on rails", "css", "JavaScript", "html"],
-    liveVersion: "https://www.google.com/",
-    source: "https://github.com/",
+    liveVersion: "https://abdulali3468.github.io/Daily-life-TODO-LIST/",
+    source: "https://github.com/ABDULALI3468/Daily-life-TODO-LIST",
   },
 
   {
-    title: "Multi-Post Stories Gain+Glory card 2",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageUrl: "./images/popup-mobile-pic.svg",
+    title: "Foodify capstone project",
+    description: "This is a website that showcases top-notch food and its recipes from all over the world from Britain to Australia, from veg to meat. It will take your response in the form of likes and comments.",
+    imageUrl: "./images/project_images/foodify_website.png",
     technologies: ["Ruby on rails", "css", "JavaScript", "html"],
-    liveVersion: "https://www.google.com/",
-    source: "https://github.com/",
+    liveVersion: "https://abdulali3468.github.io/Foodify_capstone_project/",
+    source: "https://github.com/ABDULALI3468/Foodify_capstone_project",
   },
 
   {
-    title: "Multi-Post Stories Gain+Glory card 3",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageUrl: "./images/popup-mobile-pic.svg",
+    title: "A Tourism Website",
+    description: "A tourism website though simple but enables people to find the best detinations that worth themselves. Made JavaScript ES6 , HTML 5 and CSS 3.",
+    imageUrl: "./images/project_images/travell_website_project.jpeg",
     technologies: ["Ruby on rails", "css", "JavaScript", "html"],
-    liveVersion: "https://www.google.com/",
-    source: "https://github.com/",
+    liveVersion: "https://abdulali3468.github.io/Module1--capstone_project/",
+    source: "https://github.com/ABDULALI3468/Module1--capstone_project",
   },
 
   {
-    title: "Multi-Post Stories Gain+Glory card 4",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageUrl: "./images/popup-mobile-pic.svg",
+    title: "Token World (Crypto)",
+    description: "A website that provides accurate data about various crypto currencies. It will show you everything you need to know. This includes marketcap, top and low sellings, its history and gave you some core advices you should know before taking any step.",
+    imageUrl: "./images/project_images/Cryptocurrency_project.webp",
     technologies: ["Ruby on rails", "css", "JavaScript", "html"],
-    liveVersion: "https://www.google.com/",
-    source: "https://github.com/",
+    liveVersion: "https://tokenworld.netlify.app",
+    source: "https://github.com/ABDULALI3468/crypto-capstone",
   },
 
   {
-    title: "Multi-Post Stories Gain+Glory card 5",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageUrl: "./images/popup-mobile-pic.svg",
+    title: "AWESOME BOOKS PROJECT",
+    description: "A SPW (Single Page Website) that can track your favorite books on your browser! Made with JavaScript, HTML 5 and CSS 3.",
+    imageUrl: "./images/project_images/AWESOME-BOOKS-PROJECT.jpeg",
     technologies: ["Ruby on rails", "css", "JavaScript", "html"],
-    liveVersion: "https://www.google.com/",
-    source: "https://github.com/",
+    liveVersion: "https://abdulali3468.github.io/AWESOME-BOOKS-PROJECT/",
+    source: "https://github.com/ABDULALI3468/AWESOME-BOOKS-PROJECT",
   },
 
   {
-    title: "Multi-Post Stories Gain+Glory card 6",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageUrl: "./images/popup-mobile-pic.svg",
+    title: "Math Magicians",
+    description: "In this project I am creating a Single Page App using React regarding basic Calculator and its functionalities.",
+    imageUrl: "./images/project_images/Math-majician-project.jpeg",
     technologies: ["Ruby on rails", "css", "JavaScript", "html"],
     liveVersion: "https://www.google.com/",
-    source: "https://github.com/",
+    source: "https://github.com/ABDULALI3468/Math_Magicians_SPA",
   },
 ];
 
@@ -115,7 +109,7 @@ for (let i = 0; i < projects.length; i += 1) {
   );
 }
 
-const createPopup = (name, img, desc, tech) => {
+const createPopup = (name, img, desc, tech, liveVersion, project_source ) => {
   const divul = document.createElement("ul");
   popupcontainer.classList.add("mobile-popup-container");
   popupcontainer.classList.add("display-none");
@@ -156,7 +150,7 @@ const createPopup = (name, img, desc, tech) => {
 
   const live = document.createElement("div");
   live.classList.add("live-button");
-  live.innerHTML = `<a class="live" href="https://abdulali3468.github.io/Daily-life-TODO-LIST/">See Live</a>`;
+  live.innerHTML = `<a class="live" href="${liveVersion}">See Live</a>`;
   // const plive = document.createElement('p');
   // plive.innerText = 'See Live';
   const imglive = document.createElement("img");
@@ -166,7 +160,7 @@ const createPopup = (name, img, desc, tech) => {
   const source = document.createElement("div");
   source.classList.add("live-button");
   source.classList.add("ml");
-  source.innerHTML = `<a class="live" href="https://github.com/ABDULALI3468/Daily-life-TODO-LIST">See Source</a>`;
+  source.innerHTML = `<a class="live" href="${project_source}">See Source</a>`;
   // const psource = document.createElement("p");
   // psource.innerText = "See Source";
   const imgsource = document.createElement("img");
@@ -200,12 +194,7 @@ const storybutton = document.querySelectorAll(".seepr-button");
 
 for (let i = 0; i < storybutton.length; i += 1) {
   storybutton[i].addEventListener("click", () => {
-    createPopup(
-      projects[i].title,
-      projects[i].imageUrl,
-      projects[i].description,
-      projects[i].technologies
-    );
+    createPopup(projects[i].title, projects[i].imageUrl, projects[i].description, projects[i].technologies, projects[i].liveVersion, projects[i].source);
     popupcontainer.classList.remove("display-none");
     popupcontainer.classList.add("display-flex");
   });
