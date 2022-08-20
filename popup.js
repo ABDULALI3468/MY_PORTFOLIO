@@ -15,6 +15,7 @@ function cards(name, desc, tech, img) {
 
   const divStoriesCard = document.createElement("div");
   divStoriesCard.classList.add("stories-card");
+  divStoriesCard.style.backgroundImage = `url(${img})`;
 
   const divWhiteBack = document.createElement("div");
   divWhiteBack.classList.add("white-back");
@@ -46,10 +47,10 @@ function cards(name, desc, tech, img) {
 
 const projects = [
   {
-    title: "Daily Life Todo List will make your life worthy.",
+    title: "Daily Life Todo List",
     description: "To-do list is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. One of the most important reasons for keeping a to-do list is the organization. Organizing your tasks with a list can make everything much more manageable and make you feel grounded. Seeing a clear outline of your completed and uncompleted tasks will help you feel organized and stay mentally focused.",
     imageUrl: "./images/todolist.png",
-    technologies: ["Ruby on rails", "css", "JavaScript", "html"],
+    technologies: ["JavaScript", "Webpack", "CSS", "Html", "ES6 modules"],
     liveVersion: "https://abdulali3468.github.io/Daily-life-TODO-LIST/",
     source: "https://github.com/ABDULALI3468/Daily-life-TODO-LIST",
   },
@@ -58,7 +59,7 @@ const projects = [
     title: "Foodify capstone project",
     description: "This is a website that showcases top-notch food and its recipes from all over the world from Britain to Australia, from veg to meat. It will take your response in the form of likes and comments.",
     imageUrl: "./images/project_images/foodify_website.png",
-    technologies: ["Ruby on rails", "css", "JavaScript", "html"],
+    technologies: ["MEALDB API", "JavaScript", "Webpack", "CSS", "Html", "ES6 modules"],
     liveVersion: "https://abdulali3468.github.io/Foodify_capstone_project/",
     source: "https://github.com/ABDULALI3468/Foodify_capstone_project",
   },
@@ -67,7 +68,7 @@ const projects = [
     title: "A Tourism Website",
     description: "A tourism website though simple but enables people to find the best detinations that worth themselves. Made JavaScript ES6 , HTML 5 and CSS 3.",
     imageUrl: "./images/project_images/travell_website_project.jpeg",
-    technologies: ["Ruby on rails", "css", "JavaScript", "html"],
+    technologies: ["JavaScript", "Webpack", "CSS", "Html", "ES6 modules"],
     liveVersion: "https://abdulali3468.github.io/Module1--capstone_project/",
     source: "https://github.com/ABDULALI3468/Module1--capstone_project",
   },
@@ -76,16 +77,16 @@ const projects = [
     title: "Token World (Crypto)",
     description: "A website that provides accurate data about various crypto currencies. It will show you everything you need to know. This includes marketcap, top and low sellings, its history and gave you some core advices you should know before taking any step.",
     imageUrl: "./images/project_images/Cryptocurrency_project.webp",
-    technologies: ["Ruby on rails", "css", "JavaScript", "html"],
+    technologies: ["React", "Redux", "Jest", "JavaScript", "CSS", "Html"],
     liveVersion: "https://tokenworld.netlify.app",
     source: "https://github.com/ABDULALI3468/crypto-capstone",
   },
 
   {
-    title: "AWESOME BOOKS PROJECT",
+    title: "AWESOME BOOKS",
     description: "A SPW (Single Page Website) that can track your favorite books on your browser! Made with JavaScript, HTML 5 and CSS 3.",
     imageUrl: "./images/project_images/AWESOME-BOOKS-PROJECT.jpeg",
-    technologies: ["Ruby on rails", "css", "JavaScript", "html"],
+    technologies: ["Nodejs", "npm", "JavaScript", "Webpack", "CSS", "Html"],
     liveVersion: "https://abdulali3468.github.io/AWESOME-BOOKS-PROJECT/",
     source: "https://github.com/ABDULALI3468/AWESOME-BOOKS-PROJECT",
   },
@@ -94,22 +95,17 @@ const projects = [
     title: "Math Magicians",
     description: "In this project I am creating a Single Page App using React regarding basic Calculator and its functionalities.",
     imageUrl: "./images/project_images/Math-majician-project.jpeg",
-    technologies: ["Ruby on rails", "css", "JavaScript", "html"],
+    technologies: ["React", "JavaScript", "CSS", "ES6 modules", "JSX",],
     liveVersion: "https://www.google.com/",
     source: "https://github.com/ABDULALI3468/Math_Magicians_SPA",
   },
 ];
 
 for (let i = 0; i < projects.length; i += 1) {
-  cards(
-    projects[i].title,
-    projects[i].description,
-    projects[i].technologies,
-    projects[i].imageUrl
-  );
+  cards(projects[i].title, projects[i].description, projects[i].technologies, projects[i].imageUrl);
 }
 
-const createPopup = (name, img, desc, tech, liveVersion, project_source ) => {
+const createPopup = (name, img, desc, tech, liveVersion, project_source) => {
   const divul = document.createElement("ul");
   popupcontainer.classList.add("mobile-popup-container");
   popupcontainer.classList.add("display-none");
@@ -197,6 +193,7 @@ for (let i = 0; i < storybutton.length; i += 1) {
     createPopup(projects[i].title, projects[i].imageUrl, projects[i].description, projects[i].technologies, projects[i].liveVersion, projects[i].source);
     popupcontainer.classList.remove("display-none");
     popupcontainer.classList.add("display-flex");
+    // document.body.classList.add("overflow");
   });
 }
 
