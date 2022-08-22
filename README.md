@@ -15,7 +15,7 @@
 To setup the project locally: clone the repository using:
 
 ```
-https://github.com/ABDULALI3468/MY_PORTFOLIOgit
+https://github.com/ABDULALI3468/MY_PORTFOLIO.git
 ```
 
 ### Install dependencies
