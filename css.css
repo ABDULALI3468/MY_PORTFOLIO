@@ -5,6 +5,14 @@
   font-family: "Inter", sans-serif;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
 :root {
   --text-color-1: #f0f9cf;
   --text-color-2: #23832b;
@@ -27,24 +35,24 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 12px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
-  border-radius: 10px;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 20px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-  border-radius: 10px;
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+  border-radius: 20px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  background: linear-gradient(0deg, rgb(166, 195, 34) 0%, rgb(17, 208, 237) 100%);
 }
 
 /* -------------------- */
@@ -228,10 +236,9 @@
 .go-down {
   position: relative;
   color: #262626;
-  transition: .5s;
+  transition: 0.5s;
   z-index: 3;
 }
-
 
 .go-down-container:before {
   content: "";
@@ -241,7 +248,7 @@
   width: 100%;
   height: 100%;
   background: var(--bg-color);
-  transition: .5s;
+  transition: 0.5s;
   z-index: 2;
 }
 
@@ -249,7 +256,7 @@
   top: -100%;
 }
 
-.go-down-container:nth-child(1) a:before{
+.go-down-container:nth-child(1) a:before {
   background: var(--text-color-3);
 }
 
@@ -270,6 +277,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.projects {
+  width: 95%;
 }
 
 .recent {
@@ -302,7 +313,9 @@
 
 .white-back {
   margin-top: 252px;
-  height: 219px;
+  min-height: 219px;
+  height: auto;
+  padding-bottom: 20px;
   width: 100%;
   border-radius: 8px;
   background: #fff;
@@ -330,6 +343,8 @@
 .list {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .lang-name {
@@ -344,6 +359,7 @@
   padding: 8px 12px;
   margin-left: 4px;
   margin-right: 4px;
+  margin-top: 10px;
 }
 
 .seepr-button {
@@ -591,10 +607,6 @@
   height: 114px;
 }
 
-.container {
-  padding: 0 24px;
-}
-
 .lastpage {
   display: flex;
   flex-direction: column;
@@ -626,9 +638,9 @@
 }
 
 .header-desktop {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 110vh;
+  height: 100%;
   top: 0;
   right: 68px;
   left: 0;
@@ -640,6 +652,9 @@
   background: white;
   background-size: 100% 100vh;
   border-radius: 20px;
+  z-index: 20;
+  border: 2px solid salmon;
+  scroll-behavior: smooth;
 }
 
 .header-desktop-text {

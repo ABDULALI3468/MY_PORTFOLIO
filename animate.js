@@ -1,20 +1,20 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".mypicture", {
-  x: "92vw",
-  duration: 4,
-  yoyo: true,
-  // repeat: -1,
-  ease: "power4.out",
+// gsap.to(".mypicture", {
+//   x: "92vw",
+//   duration: 4,
+//   yoyo: true,
+//   // repeat: -1,
+//   ease: "power4.out",
 
-  scrollTrigger: {
-    trigger: ".stories-card",
-    start: "top top",
-    end: "bottom top",
-    toggleActions: "restart pause reverse pause",
-    // toggleClass: "red",
-  },
-});
+//   scrollTrigger: {
+//     trigger: ".stories-card",
+//     start: "top top",
+//     end: "bottom top",
+//     toggleActions: "restart pause reverse pause",
+//     // toggleClass: "red",
+//   },
+// });
 
 gsap.from("#main-header", {
   x: -200,

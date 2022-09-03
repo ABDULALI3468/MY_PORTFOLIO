@@ -6,4 +6,5 @@
   width: 150px;
   overflow: hidden;
   z-index: 4;
+  opacity: 0;
 }
