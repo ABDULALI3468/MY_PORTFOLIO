@@ -1,13 +1,7 @@
-let c = console.log;
 const form = document.querySelector(".contact");
-
 const formEmail = document.querySelector("#email-address");
 const error = document.querySelector(".error");
 const errormessage = document.querySelector(".error-message");
-c(form);
-c(formEmail);
-c(error);
-c(errormessage);
 
 form.addEventListener("submit", (event) => {
   if (formEmail.value.match(/^[a-z.0-9-_]+@[a-z.0-9-_]+$/)) {

@@ -1,4 +1,3 @@
-const closePop = document.querySelector(".cross-popup-icon");
 const popupcontainer = document.createElement("section");
 const diviconimage = document.createElement("div");
 const divbackcross = document.createElement("div");
@@ -95,7 +94,7 @@ const projects = [
     title: "Math Magicians",
     description: "In this project I am creating a Single Page App using React regarding basic Calculator and its functionalities.",
     imageUrl: "./images/project_images/Math-majician-project.jpeg",
-    technologies: ["React", "JavaScript", "CSS", "ES6 modules", "JSX",],
+    technologies: ["React", "JavaScript", "CSS", "ES6 modules", "JSX"],
     liveVersion: "https://www.google.com/",
     source: "https://github.com/ABDULALI3468/Math_Magicians_SPA",
   },
@@ -147,8 +146,6 @@ const createPopup = (name, img, desc, tech, liveVersion, project_source) => {
   const live = document.createElement("div");
   live.classList.add("live-button");
   live.innerHTML = `<a class="live" href="${liveVersion}">See Live</a>`;
-  // const plive = document.createElement('p');
-  // plive.innerText = 'See Live';
   const imglive = document.createElement("img");
   imglive.src = "./images/live-icon.svg";
   imglive.alt = "";
@@ -157,8 +154,6 @@ const createPopup = (name, img, desc, tech, liveVersion, project_source) => {
   source.classList.add("live-button");
   source.classList.add("ml");
   source.innerHTML = `<a class="live" href="${project_source}">See Source</a>`;
-  // const psource = document.createElement("p");
-  // psource.innerText = "See Source";
   const imgsource = document.createElement("img");
   imgsource.src = "./images/source-icon.svg";
   imgsource.alt = "";
@@ -179,10 +174,8 @@ const createPopup = (name, img, desc, tech, liveVersion, project_source) => {
   popupcontainer.appendChild(description);
   popupcontainer.appendChild(buttons);
   buttons.appendChild(live);
-  // live.appendChild(plive);
   live.appendChild(imglive);
   buttons.appendChild(source);
-  // source.appendChild(psource);
   source.appendChild(imgsource);
 };
 
@@ -193,13 +186,12 @@ for (let i = 0; i < storybutton.length; i += 1) {
     createPopup(projects[i].title, projects[i].imageUrl, projects[i].description, projects[i].technologies, projects[i].liveVersion, projects[i].source);
     popupcontainer.classList.remove("display-none");
     popupcontainer.classList.add("display-flex");
-    // document.body.classList.add("overflow");
+    document.body.style.overflow = "hidden";
   });
 }
 
 divbackcross.addEventListener("click", () => {
   const popup = document.querySelector(".mobile-popup-container");
-  // remove children elements...
   const techDiv = popup.querySelector(".title-and-tech");
   const popupTech = popup.querySelector(".popup-tech");
   techDiv.childNodes.forEach((tech) => {
@@ -217,4 +209,5 @@ divbackcross.addEventListener("click", () => {
     popup.removeChild(child);
   });
   popup.parentElement.removeChild(popup);
+  document.body.style.overflow = "auto";
 });
