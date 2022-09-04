@@ -70,6 +70,7 @@ body {
 }
 
 .wrapper {
+  margin-top: 100px;
   padding-top: 57.8px;
   background-image: url(./images/backgroundss.png);
   background-size: 100% 100%;
@@ -77,25 +78,16 @@ body {
 
 .nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: end;
+  /* justify-content: space-between; */
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------- */
 
 .nav-items {
-  /* background-color: var(--bg-color); */
   display: flex;
-  /* position: fixed; */
-  /* height: 13vh; */
-  /* flex-direction: row; */
-  /* top: 0; */
-  /* left: 0; */
-  /* right: 0; */
-  /* z-index: 10; */
   align-items: center;
   justify-content: center;
-  /* gap: 1rem; */
 }
 
 .item a {
@@ -147,7 +139,12 @@ body {
 /* -------------------------------------------------------------------------------------------------------------------------- */
 
 .hamburger {
-  margin: 54px 35px 25px 0;
+  /* margin: 54px 0px 25px 0; */
+  position: absolute;
+  top: 54px;
+  right: 24px;
+  /* margin-top: 54px; */
+  /* margin-bottom: 25px; */
 }
 
 .welcome {
@@ -156,7 +153,12 @@ body {
   font-weight: 600;
   font-size: 20px;
   color: #28352f;
-  margin: 54px 209px 25px 24px;
+  /* margin: 54px 0px 25px 0; */
+  position: absolute;
+  top: 54px;
+  left: 24px;
+  /* margin-bottom: 25px;
+  margin-top: 54px; */
 }
 
 .intro {
@@ -443,7 +445,8 @@ body {
 
 .languages {
   height: 352px;
-  width: 327px;
+  min-width: 300px;
+  max-width: 400px;
   background: #ebf0ee;
   border-radius: 8px;
   border: 1px solid #c1c7d0;
@@ -517,16 +520,14 @@ body {
 }
 
 .conclusion-text {
-  width: 327px;
-  height: 363px;
-  font-family: "Inter", sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 51px;
   color: #172b4d;
   text-align: center;
   margin-block: 36px;
+  position: relative;
 }
 
 .footer {
@@ -614,8 +615,8 @@ body {
 
 .cross-icon {
   position: absolute;
-  top: 30px;
-  right: 15px;
+  top: 50px;
+  right: 26px;
 }
 
 .popup-list {
@@ -638,23 +639,28 @@ body {
 }
 
 .header-desktop {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
   position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
-  right: 68px;
   left: 0;
-  display: none;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   color: black;
-  background: white;
+  background: linear-gradient(0deg, rgba(156, 180, 69, 1) 0%, rgba(240, 249, 207, 1) 100%);
   background-size: 100% 100vh;
-  border-radius: 20px;
+
   z-index: 20;
-  border: 2px solid salmon;
-  scroll-behavior: smooth;
+  transform: translateX(-100%);
+  transition: transform 300ms ease-out;
+}
+
+.header-desktop[data-visible = "true"] {
+  transform : translateX(0%);
 }
 
 .header-desktop-text {
@@ -825,6 +831,7 @@ body {
   }
 
   .wrapper {
+    margin-top: 0;
     background: url(./images/desktop-background.png);
     background-size: 100% 100vh;
     padding: 0 200px 100px;
