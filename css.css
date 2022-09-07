@@ -655,12 +655,19 @@ body {
   background-size: 100% 100vh;
 
   z-index: 20;
+  opacity: 0;
   transform: translateX(-100%);
-  transition: transform 300ms ease-out;
+  transition: all 300ms ease-out;
 }
 
 .header-desktop[data-visible = "true"] {
+  opacity: 1;
   transform : translateX(0%);
+}
+
+.header-desktop[data-visible = "onRight"] {
+  opacity: 1;
+  transform : translateX(100%);
 }
 
 .header-desktop-text {

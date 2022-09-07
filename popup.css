@@ -23,6 +23,20 @@
   overflow: auto;
   flex-direction: column;
   background: #fff;
+
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+}
+
+.mobile-popup-container[data-visible="true"] {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.mobile-popup-container[data-visible="onRight"] {
+  opacity: 1;
+  transform: translateX(100%);
 }
 
 .popup-image {
@@ -81,7 +95,6 @@
   margin-bottom: 12px;
   font-size: 17px;
   line-height: 31px;
-
 }
 
 .popup-buttons {
@@ -171,7 +184,17 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -30%);
+    transition: all 1s ease;
+  }
 
+  .mobile-popup-container[data-visible="true"] {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  .mobile-popup-container[data-visible="onRight"] {
+    opacity: 0;
+    transform: translate(-1000%, -30%);
   }
 }

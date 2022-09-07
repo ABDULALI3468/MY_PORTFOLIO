@@ -107,6 +107,7 @@ for (let i = 0; i < projects.length; i += 1) {
 const createPopup = (name, img, desc, tech, liveVersion, project_source) => {
   const divul = document.createElement("ul");
   popupcontainer.classList.add("mobile-popup-container");
+  popupcontainer.setAttribute("data-visible", "false");
   popupcontainer.classList.add("display-none");
 
   diviconimage.classList.add("icon-image");
@@ -187,6 +188,13 @@ for (let i = 0; i < storybutton.length; i += 1) {
     popupcontainer.classList.remove("display-none");
     popupcontainer.classList.add("display-flex");
     document.body.style.overflow = "hidden";
+
+    setTimeout(() => {
+      const visibility = popupcontainer.getAttribute("data-visible");
+      if (visibility === "false") {
+        popupcontainer.setAttribute("data-visible", "true");
+      }
+    }, 50);
   });
 }
 
@@ -194,20 +202,34 @@ divbackcross.addEventListener("click", () => {
   const popup = document.querySelector(".mobile-popup-container");
   const techDiv = popup.querySelector(".title-and-tech");
   const popupTech = popup.querySelector(".popup-tech");
-  techDiv.childNodes.forEach((tech) => {
-    techDiv.removeChild(tech);
-  });
-  techDiv.parentElement.removeChild(techDiv);
 
-  popupTech.childNodes.forEach((tech) => {
-    popupTech.removeChild(tech);
-  });
-  popupTech.parentElement.removeChild(popupTech);
+  console.log("before");
 
-  // remove children elements...
-  popup.childNodes.forEach((child) => {
-    popup.removeChild(child);
-  });
-  popup.parentElement.removeChild(popup);
+  const visibility = popup.getAttribute("data-visible");
+  if (visibility === "true") {
+    popup.setAttribute("data-visible", "onRight");
+    console.log("after");
+  }
+
+  setTimeout(() => {
+    console.log("going for deletion");
+    techDiv.childNodes.forEach((tech) => {
+      techDiv.removeChild(tech);
+    });
+    techDiv.parentElement.removeChild(techDiv);
+
+    popupTech.childNodes.forEach((tech) => {
+      popupTech.removeChild(tech);
+    });
+    popupTech.parentElement.removeChild(popupTech);
+
+    // remove children elements...
+    popup.childNodes.forEach((child) => {
+      popup.removeChild(child);
+    });
+    popup.parentElement.removeChild(popup);
+    console.log("Animation");
+    popup.setAttribute("data-visible", "false");
+  }, 200);
   document.body.style.overflow = "auto";
 });
