@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <title>My Portfolio😎</title>
-    <link rel="icon" type="image/x-icon" href="😎">
-    <link rel="icon" type="image/x-icon" href="./images/project_images/favicon.ico">
-    <link rel="stylesheet" href="css.css" />
-    <link rel="stylesheet" href="popup.css" />
-    <link rel="stylesheet" href="animate.css" />
+    <link rel="icon" type="image/x-icon" href="😎" />
+    <link rel="icon" type="image/x-icon" href="./images/project_images/favicon.ico" />
+    <link rel="stylesheet" href="./css/css.css" />
+    <link rel="stylesheet" href="./css/popup.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -18,14 +18,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet" />
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) FOR GOOGLE ANALYTICS-->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GJJVXB4L13"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-GJJVXB4L13');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-GJJVXB4L13");
     </script>
   </head>
 
@@ -107,7 +108,7 @@
       <div class="aboutme" id="About">
         <h2 class="myself">About me</h2>
         <p class="exp">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,don’t hestiate to contact me.</p>
-        <p class="resume-button">Get My Resume</p>
+        <a href="https://www.linkedin.com/posts/abdulali99_check-out-my-resume-to-know-why-only-me-activity-6954693464122867712-Y3aO?utm_source=share&utm_medium=member_desktop" target="_blank" class="resume-button">Get My Resume</a>
       </div>
 
       <div class="container" id="langs">
@@ -191,15 +192,15 @@
         <p class="email">mrabdulali2003@gmail.com</p>
       </footer>
     </section>
+
     <img class="mypicture" src="./images/myself.png" alt="" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
 
-    <script src="popup.js"></script>
-    <script src="script.js"></script>
-    <script src="form-validation.js"></script>
-    <script src="cards-animations.js"></script>
-    <script src="animate.js"></script>
+    <script src="./js/popup.js" type="module"></script>
+    <script src="./js/script.js" type="module"></script>
+    <script src="./js/form-validation.js" type="module"></script>
+    <script src="./js/animate.js" type="module"></script>
   </body>
 </html>

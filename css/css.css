@@ -72,7 +72,7 @@ body {
 .wrapper {
   margin-top: 100px;
   padding-top: 57.8px;
-  background-image: url(./images/backgroundss.png);
+  background-image: url(../images/backgroundss.png);
   background-size: 100% 100%;
 }
 
@@ -375,6 +375,7 @@ body {
   border-radius: 4px;
   padding: 12px;
   margin-top: 29px;
+  transition: 0.2s box-shadow ease-in-out;
 }
 
 .seepr-button:hover {
@@ -433,6 +434,8 @@ body {
   width: 159px;
   align-items: center;
   align-self: center;
+  text-decoration: none;
+  transition: 0.2s box-shadow ease-in-out;
 }
 
 .resume-button:hover {
@@ -531,7 +534,7 @@ body {
 }
 
 .footer {
-  background: url(./images/bg-footer.svg) no-repeat right;
+  background: url(../images/bg-footer.svg) no-repeat right;
   background-size: 100% 100%;
 }
 
@@ -549,10 +552,11 @@ body {
   border-style: none;
   padding: 12px 9px;
   height: 48px;
+  transition: 0.2s box-shadow ease-in-out;
 }
 
 .contact-btn:hover {
-  box-shadow: 0 8px 16px 0;
+  box-shadow: 0 8px 16px 0 #247f59;
 }
 
 .contact-btn:active {
@@ -639,7 +643,6 @@ body {
 }
 
 .header-desktop {
-
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -660,14 +663,14 @@ body {
   transition: all 300ms ease-out;
 }
 
-.header-desktop[data-visible = "true"] {
+.header-desktop[data-visible="true"] {
   opacity: 1;
-  transform : translateX(0%);
+  transform: translateX(0%);
 }
 
-.header-desktop[data-visible = "onRight"] {
+.header-desktop[data-visible="onRight"] {
   opacity: 1;
-  transform : translateX(100%);
+  transform: translateX(100%);
 }
 
 .header-desktop-text {
@@ -839,7 +842,7 @@ body {
 
   .wrapper {
     margin-top: 0;
-    background: url(./images/desktop-background.png);
+    background: url(../images/desktop-background.png);
     background-size: 100% 100vh;
     padding: 0 200px 100px;
   }
@@ -915,13 +918,13 @@ body {
 
   .footer {
     align-self: center;
-    background: url(./images/bg-footer.svg) no-repeat;
+    background: url(../images/bg-footer.svg) no-repeat;
     background-size: 100% 100%;
   }
 
   .aboutme {
     margin-top: 95px;
-    background: url(./images/aboutme-background.svg) no-repeat;
+    background: url(../images/aboutme-background.svg) no-repeat;
     background-size: cover;
     padding-bottom: 70px;
   }

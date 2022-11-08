@@ -7,9 +7,7 @@ const contact = document.getElementById("contact");
 const portfolio = document.getElementById("portfolio");
 
 hamburger.addEventListener("click", () => {
-  // mobileMenu.style.display = "flex";
   document.body.style.overflow = "hidden";
-
   const visibility = header.getAttribute("data-visible");
   if (visibility === "false") {
     header.setAttribute("data-visible", 'true');
@@ -21,7 +19,6 @@ hamburger.addEventListener("click", () => {
 });
 
 crossicon.addEventListener("click", () => {
-  // mobileMenu.style.display = "none";
   header.setAttribute("data-visible", 'onRight');
   setTimeout(() => {
     header.setAttribute("data-visible", 'false');
