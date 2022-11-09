@@ -1,13 +1,13 @@
 
 # My Portfolio.
 
-> Description : 
+> Description :
                 This project is a SHOWCASE of my portfolio which contains my projects and all the stuff in visualization.
 
 ## Built With
 
 - HTML and CSS
-- JavaAcript ES6
+- Javascript ES6
 - Linters etc.
 
 ### Setup

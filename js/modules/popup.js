@@ -1,36 +1,6 @@
 const popupcontainer = document.createElement("section");
-import projects from "../data/projects.js";
 
-function cards(name, technologies, img, index) {
-  const gridContainer = document.querySelector(".grid");
-
-  gridContainer.innerHTML += `
-  <div class="stories-card" style='background-image: url(${img});'>
-    <div class="white-back">
-      <h3 class="card-title">${name}</h3>
-      <ul class="list technologies-list-${index}">
-      </ul>
-      <p class="seepr-button">See Project</p>
-    </div>
-  </div>`;
-
-  const technologiesContainer = document.querySelector(`.technologies-list-${index}`);
-
-  technologies.forEach((tech) => {
-    technologiesContainer.innerHTML += `<li class="lang-name">${tech}</li>`;
-  });
-}
-
-const cardCreator = () => {
-  for (let i = 0; i < projects.length; i += 1) {
-    cards(projects[i].title, projects[i].technologies, projects[i].imageUrl, i);
-  }
-};
-
-cardCreator();
-
-const createPopup = (name, img, desc, tech, liveVersion, project_source) => {
-  const divul = document.createElement("ul");
+const popup = (name, img, desc, tech, liveVersion, project_source) => {
   popupcontainer.classList.add("mobile-popup-container");
   popupcontainer.setAttribute("data-visible", "false");
   popupcontainer.classList.add("display-none");
@@ -82,15 +52,15 @@ const createPopup = (name, img, desc, tech, liveVersion, project_source) => {
   divbackcross.addEventListener("click", () => {
     const popup = document.querySelector(".mobile-popup-container");
     const techDiv = popup.querySelector(".title-and-tech");
-    const popupTech = popup.querySelector(".popup-tech");;
+    const popupTech = popup.querySelector(".popup-tech");
 
     const visibility = popup.getAttribute("data-visible");
+
     if (visibility === "true") {
       popup.setAttribute("data-visible", "onRight");
     }
 
     setTimeout(() => {
-      console.log("going for deletion");
       techDiv.childNodes.forEach((tech) => {
         techDiv.removeChild(tech);
       });
@@ -106,27 +76,10 @@ const createPopup = (name, img, desc, tech, liveVersion, project_source) => {
         popup.removeChild(child);
       });
       popup.parentElement.removeChild(popup);
-      console.log("Animation");
       popup.setAttribute("data-visible", "false");
     }, 200);
     document.body.style.overflow = "auto";
   });
 };
 
-const storybutton = document.querySelectorAll(".seepr-button");
-
-for (let i = 0; i < storybutton.length; i += 1) {
-  storybutton[i].addEventListener("click", () => {
-    createPopup(projects[i].title, projects[i].imageUrl, projects[i].description, projects[i].technologies, projects[i].liveVersion, projects[i].source);
-    popupcontainer.classList.remove("display-none");
-    popupcontainer.classList.add("display-flex");
-    document.body.style.overflow = "hidden";
-
-    setTimeout(() => {
-      const visibility = popupcontainer.getAttribute("data-visible");
-      if (visibility === "false") {
-        popupcontainer.setAttribute("data-visible", "true");
-      }
-    }, 50);
-  });
-}
+export default popup;
