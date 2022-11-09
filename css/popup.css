@@ -23,6 +23,19 @@
   overflow: auto;
   flex-direction: column;
   background: #fff;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+}
+
+.mobile-popup-container[data-visible="true"] {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.mobile-popup-container[data-visible="onRight"] {
+  opacity: 1;
+  transform: translateX(100%);
 }
 
 .popup-image {
@@ -37,13 +50,13 @@
 }
 
 .popup-title {
-  width: 259px;
+  /* width: 259px; */
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-  color: #172b4d;
   margin-top: 10px;
+  color: rgb(90 98 95);
+  font-size: 40px;
+  line-height: 80px;
 }
 
 .popup-tech {
@@ -51,6 +64,7 @@
   margin-bottom: 24px;
   margin-top: 15px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .popup-tech-li {
@@ -59,6 +73,7 @@
   border-radius: 4px;
   margin-left: 4px;
   margin-right: 4px;
+  margin-top: 13px;
   width: auto;
   height: auto;
   padding: 8px 12px;
@@ -75,15 +90,17 @@
   height: auto;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
   color: #344563;
   margin-bottom: 12px;
+  font-size: 17px;
+  line-height: 31px;
 }
 
 .popup-buttons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
 }
 
 .ml {
@@ -142,9 +159,9 @@
   }
 
   .popup-buttons {
-    position: absolute;
+    /* position: absolute;
     right: 25px;
-    bottom: 188px;
+    bottom: 188px; */
     width: 300px;
   }
 
@@ -155,8 +172,9 @@
   }
 
   .mobile-popup-container {
-    width: 70vw;
-    height: 90vh;
+    width: 40vw;
+    min-height: auto;
+    height: auto;
     padding: 16px;
     overflow: auto;
     flex-direction: column;
@@ -165,6 +183,17 @@
     position: fixed;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -30%);
+    transition: all 1s ease;
+  }
+
+  .mobile-popup-container[data-visible="true"] {
+    opacity: 1;
     transform: translate(-50%, -50%);
+  }
+
+  .mobile-popup-container[data-visible="onRight"] {
+    opacity: 0;
+    transform: translate(-1000%, -30%);
   }
 }
