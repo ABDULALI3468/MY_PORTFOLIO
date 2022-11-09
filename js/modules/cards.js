@@ -1,5 +1,5 @@
 function cards(name, technologies, img, index) {
-  const gridContainer = document.querySelector(".grid");
+  const gridContainer = document.querySelector('.grid');
 
   gridContainer.innerHTML += `
   <div class="stories-card" style='background-image: url(${img});'>

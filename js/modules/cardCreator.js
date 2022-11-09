@@ -1,4 +1,4 @@
-import cards from "./cards.js";
+import cards from './cards.js';
 
 const cardCreator = (projects) => {
   for (let i = 0; i < projects.length; i += 1) {
