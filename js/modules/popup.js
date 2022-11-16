@@ -8,7 +8,7 @@ const popup = (name, img, desc, tech, liveVersion, projectSource, index) => {
   popupcontainer.innerHTML = `
   <div class="icon-image">
     <div class="back-cross">
-      <img class="cross-popup-icon" src="../images/cross-icon.png" alt="" />
+      <img class="cross-popup-icon" src="../../images/cross-icon.png" alt="" />
     </div>
     <div class="popup-image">
       <img src=${img} />
@@ -19,14 +19,8 @@ const popup = (name, img, desc, tech, liveVersion, projectSource, index) => {
       <h1 class="popup-title">${name}</h1>
     </div>
     <div>
-
-
-
       <ul class="popup-tech tech-list-${index}">
       </ul>
-
-
-
     </div>
   </div>
   <div class="popup-description">${desc}</div>
@@ -35,13 +29,13 @@ const popup = (name, img, desc, tech, liveVersion, projectSource, index) => {
       <a class="live" target="_blank" href=${liveVersion}>
         See Live
       </a>
-      <img src="../images/live-icon.svg" alt="" />
+      <img src="../../images/live-icon.svg" alt="" />
     </div>
     <div class="live-button ml">
       <a class="live" target="_blank" href=${projectSource}>
         See Source
       </a>
-      <img src="../images/source-icon.svg" alt="" />
+      <img src="../../images/source-icon.svg" alt="" />
     </div>
   </div>
   `;
