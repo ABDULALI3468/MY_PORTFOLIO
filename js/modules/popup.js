@@ -1,9 +1,9 @@
-const popupcontainer = document.createElement('section');
+const popupcontainer = document.createElement("section");
 
-const popup = (name, img, desc, tech, liveVersion, projectSource) => {
-  popupcontainer.classList.add('mobile-popup-container');
-  popupcontainer.setAttribute('data-visible', 'false');
-  popupcontainer.classList.add('display-none');
+const popup = (name, img, desc, tech, liveVersion, projectSource, index) => {
+  popupcontainer.classList.add("mobile-popup-container");
+  popupcontainer.setAttribute("data-visible", "false");
+  popupcontainer.classList.add("display-none");
 
   popupcontainer.innerHTML = `
   <div class="icon-image">
@@ -19,13 +19,14 @@ const popup = (name, img, desc, tech, liveVersion, projectSource) => {
       <h1 class="popup-title">${name}</h1>
     </div>
     <div>
-      <ul class="popup-tech">
-        <li class="popup-tech-li">JavaScript</li>
-        <li class="popup-tech-li">Webpack</li>
-        <li class="popup-tech-li">CSS</li>
-        <li class="popup-tech-li">Html</li>
-        <li class="popup-tech-li">ES6 modules</li>
+
+
+
+      <ul class="popup-tech tech-list-${index}">
       </ul>
+
+
+
     </div>
   </div>
   <div class="popup-description">${desc}</div>
@@ -47,17 +48,20 @@ const popup = (name, img, desc, tech, liveVersion, projectSource) => {
 
   document.body.appendChild(popupcontainer);
 
-  const divbackcross = document.querySelector('.cross-popup-icon');
+  const techContainer = document.querySelector(`.tech-list-${index}`);
+  tech.forEach((tec) => {
+    techContainer.innerHTML += `<li class="popup-tech-li">${tec}</li>`;
+  });
 
-  divbackcross.addEventListener('click', () => {
-    const popup = document.querySelector('.mobile-popup-container');
-    const techDiv = popup.querySelector('.title-and-tech');
-    const popupTech = popup.querySelector('.popup-tech');
+  const divbackcross = document.querySelector(".cross-popup-icon");
+  divbackcross.addEventListener("click", () => {
+    const popup = document.querySelector(".mobile-popup-container");
+    const techDiv = popup.querySelector(".title-and-tech");
+    const popupTech = popup.querySelector(".popup-tech");
+    const visibility = popup.getAttribute("data-visible");
 
-    const visibility = popup.getAttribute('data-visible');
-
-    if (visibility === 'true') {
-      popup.setAttribute('data-visible', 'onRight');
+    if (visibility === "true") {
+      popup.setAttribute("data-visible", "onRight");
     }
 
     setTimeout(() => {
@@ -76,9 +80,9 @@ const popup = (name, img, desc, tech, liveVersion, projectSource) => {
         popup.removeChild(child);
       });
       popup.parentElement.removeChild(popup);
-      popup.setAttribute('data-visible', 'false');
+      popup.setAttribute("data-visible", "false");
     }, 200);
-    document.body.style.overflow = 'auto';
+    document.body.style.overflow = "auto";
   });
 };
 

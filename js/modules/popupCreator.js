@@ -7,7 +7,7 @@ const createPopup = () => {
   for (let i = 0; i < storybutton.length; i += 1) {
     storybutton[i].addEventListener('click', () => {
       popup(projects[i].title, projects[i].imageUrl, projects[i].description,
-        projects[i].technologies, projects[i].liveVersion, projects[i].source);
+        projects[i].technologies, projects[i].liveVersion, projects[i].source, i);
       const popupcontainer = document.querySelector('.mobile-popup-container');
       popupcontainer.classList.remove('display-none');
       popupcontainer.classList.add('display-flex');
