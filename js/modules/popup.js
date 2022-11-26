@@ -48,11 +48,30 @@ const popup = (name, img, desc, tech, liveVersion, projectSource, index) => {
   });
 
   const divbackcross = document.querySelector(".cross-popup-icon");
+
+  // Select element with box class, assign to box variable
+  // const box = document.querySelector(".box");
+  // Detect all clicks on the document
+  // If user clicks inside the element, do nothing
+  // If user clicks outside the element, hide it!
+  // box.classList.add("js-is-hidden");
+
+
+  document.addEventListener("click", (event) => {
+    const popup = document.querySelector(".mobile-popup-container");
+    const visibility = popup.getAttribute("data-visible");
+    if (event.target.closest(".mobile-popup-container")) return;
+    if (visibility === "true") {
+      popup.setAttribute("data-visible", "onRight");
+    }
+    document.body.style.overflow = "auto";
+  });
+
   divbackcross.addEventListener("click", () => {
     const popup = document.querySelector(".mobile-popup-container");
+    const visibility = popup.getAttribute("data-visible");
     const techDiv = popup.querySelector(".title-and-tech");
     const popupTech = popup.querySelector(".popup-tech");
-    const visibility = popup.getAttribute("data-visible");
 
     if (visibility === "true") {
       popup.setAttribute("data-visible", "onRight");
