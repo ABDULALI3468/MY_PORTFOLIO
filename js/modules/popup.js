@@ -1,14 +1,14 @@
-const popupcontainer = document.createElement('section');
+const popupcontainer = document.createElement("section");
 
-const popup = (name, img, desc, tech, liveVersion, projectSource) => {
-  popupcontainer.classList.add('mobile-popup-container');
-  popupcontainer.setAttribute('data-visible', 'false');
-  popupcontainer.classList.add('display-none');
+const popup = (name, img, desc, tech, liveVersion, projectSource, index) => {
+  popupcontainer.classList.add("mobile-popup-container");
+  popupcontainer.setAttribute("data-visible", "false");
+  popupcontainer.classList.add("display-none");
 
   popupcontainer.innerHTML = `
   <div class="icon-image">
     <div class="back-cross">
-      <img class="cross-popup-icon" src="../images/cross-icon.png" alt="" />
+      <img class="cross-popup-icon" src="images/cross-icon.png" alt="" />
     </div>
     <div class="popup-image">
       <img src=${img} />
@@ -19,12 +19,7 @@ const popup = (name, img, desc, tech, liveVersion, projectSource) => {
       <h1 class="popup-title">${name}</h1>
     </div>
     <div>
-      <ul class="popup-tech">
-        <li class="popup-tech-li">JavaScript</li>
-        <li class="popup-tech-li">Webpack</li>
-        <li class="popup-tech-li">CSS</li>
-        <li class="popup-tech-li">Html</li>
-        <li class="popup-tech-li">ES6 modules</li>
+      <ul class="popup-tech tech-list-${index}">
       </ul>
     </div>
   </div>
@@ -34,30 +29,52 @@ const popup = (name, img, desc, tech, liveVersion, projectSource) => {
       <a class="live" target="_blank" href=${liveVersion}>
         See Live
       </a>
-      <img src="../images/live-icon.svg" alt="" />
+      <img src="images/live-icon.svg" alt="" />
     </div>
     <div class="live-button ml">
       <a class="live" target="_blank" href=${projectSource}>
         See Source
       </a>
-      <img src="../images/source-icon.svg" alt="" />
+      <img src="images/source-icon.svg" alt="" />
     </div>
   </div>
   `;
 
   document.body.appendChild(popupcontainer);
 
-  const divbackcross = document.querySelector('.cross-popup-icon');
+  const techContainer = document.querySelector(`.tech-list-${index}`);
+  tech.forEach((tec) => {
+    techContainer.innerHTML += `<li class="popup-tech-li">${tec}</li>`;
+  });
 
-  divbackcross.addEventListener('click', () => {
-    const popup = document.querySelector('.mobile-popup-container');
-    const techDiv = popup.querySelector('.title-and-tech');
-    const popupTech = popup.querySelector('.popup-tech');
+  const divbackcross = document.querySelector(".cross-popup-icon");
 
-    const visibility = popup.getAttribute('data-visible');
+  // Select element with box class, assign to box variable
+  // const box = document.querySelector(".box");
+  // Detect all clicks on the document
+  // If user clicks inside the element, do nothing
+  // If user clicks outside the element, hide it!
+  // box.classList.add("js-is-hidden");
 
-    if (visibility === 'true') {
-      popup.setAttribute('data-visible', 'onRight');
+
+  document.addEventListener("click", (event) => {
+    const popup = document.querySelector(".mobile-popup-container");
+    const visibility = popup.getAttribute("data-visible");
+    if (event.target.closest(".mobile-popup-container")) return;
+    if (visibility === "true") {
+      popup.setAttribute("data-visible", "onRight");
+    }
+    document.body.style.overflow = "auto";
+  });
+
+  divbackcross.addEventListener("click", () => {
+    const popup = document.querySelector(".mobile-popup-container");
+    const visibility = popup.getAttribute("data-visible");
+    const techDiv = popup.querySelector(".title-and-tech");
+    const popupTech = popup.querySelector(".popup-tech");
+
+    if (visibility === "true") {
+      popup.setAttribute("data-visible", "onRight");
     }
 
     setTimeout(() => {
@@ -76,9 +93,9 @@ const popup = (name, img, desc, tech, liveVersion, projectSource) => {
         popup.removeChild(child);
       });
       popup.parentElement.removeChild(popup);
-      popup.setAttribute('data-visible', 'false');
+      popup.setAttribute("data-visible", "false");
     }, 200);
-    document.body.style.overflow = 'auto';
+    document.body.style.overflow = "auto";
   });
 };
 
